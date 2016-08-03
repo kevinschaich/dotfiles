@@ -1,0 +1,57 @@
+{
+  "folders":
+  [
+    {
+    "binary_file_patterns":
+    [
+      "*Makefile",
+      "*BUILDER",
+      "*DEPENDENCIES"
+    ],
+    "file_exclude_patterns":
+    [
+      "SConstruct",
+      "*.dblite",
+      "*.pyc",
+      "*.pyo",
+      "*.exe",
+      "*.class",
+      ".DS_Store",
+      "*.egg",
+      "*.egg-info",
+      "*.xcworkspacedata",
+      "*.xccheckout",
+      "*.xcuserstate",
+      "*.xcscheme",
+      "*.plist"
+    ],
+    "folder_exclude_patterns":
+    [
+      ".cache",
+      "__pycache__",
+      "lib_bash",
+      "apis",
+      "build",
+      "docs",
+      "presence",
+      "production",
+      "sandbox",
+      "site-packages",
+      "venv"
+    ],
+    "path": "/Users/kevinschaich/Dropbox/Programming/cracking_coding_interview_6e"
+    }
+  ],
+  "build_systems":
+  [
+    {
+      "name": "pytest",
+      "cmd": ["py.test", "/Users/kevinschaich/Dropbox/Programming/cracking_coding_interview_6e/s09_technical_questions"]
+    }
+  ],
+  "settings":
+  {
+    "tab_size": 4,
+    "python_interpreter": "/Users/kevinschaich/Dropbox/Programming/cracking_coding_interview_6e/venv/bin/python"
+  }
+}

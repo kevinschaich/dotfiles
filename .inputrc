@@ -1,0 +1,28 @@
+# Display possible completions using different colors to indicate their file type
+set colored-stats on
+
+# Ignore case for completions
+set completion-ignore-case on
+
+# Set editing mode shortcuts like VIM
+set editing-mode vi
+
+# Expand tilde on completion
+set expand-tilde on
+
+# Display slash after symlinked directories
+set mark-symlinked-directories on
+
+# Complete hidden files
+set match-hidden-files on
+
+# List words which have more than one possible completion
+set show-all-if-ambiguous on
+
+# List words which have more than one possible completion without any possible partial completion
+set show-all-if-unmodified on
+
+# Don't duplicate completions in the middle of a word
+set skip-completed-text on
+
+set visible-stats on

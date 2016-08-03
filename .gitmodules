@@ -1,0 +1,3 @@
+[submodule "clustergit"]
+	path = clustergit
+	url = https://github.com/mnagel/clustergit.git
