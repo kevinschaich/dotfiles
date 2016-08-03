@@ -1,0 +1,26 @@
+[
+  // toggle side bar with cmd + /
+  { "keys": ["super+\\"], "command": "toggle_side_bar" },
+
+  // expand selection to brackets
+  { "keys": ["super+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
+
+  // switch behavior for paste/paste & indent
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" },
+
+  // move text left/right with same behavior as cmd+ctrl+up/down
+  { "keys": ["super+ctrl+left"], "command": "move_text_left" },
+  { "keys": ["super+ctrl+right"], "command": "move_text_right" },
+
+  // open sublime keymap with cmd+shift+,
+  { "keys": ["super+shift+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
+
+  // wrap selection with backticks
+  { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}`"}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+    ]
+  },
+]

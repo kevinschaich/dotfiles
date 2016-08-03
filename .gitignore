@@ -1,13 +1,15 @@
 **/.DS_Store
 
-/Sublime\ Text\ 3/Cache/
-/Sublime\ Text\ 3/Backup/
-/Sublime\ Text\ 3/Index/
-/Sublime\ Text\ 3/Local/
-/Sublime\ Text\ 3/Packages/
-/Sublime\ Text\ 3/Installed\ Packages/
-!/Sublime\ Text\ 3/Packages/User/
-!/Sublime\ Text\ 3/Packages/User/*
+Sublime\ Text\ 3/Cache/
+Sublime\ Text\ 3/Backup/
+Sublime\ Text\ 3/Index/
+Sublime\ Text\ 3/Local/
+Sublime\ Text\ 3/Packages/*
+Sublime\ Text\ 3/Installed\ Packages/*
+
+!Sublime\ Text\ 3/Packages/User/
+!Sublime\ Text\ 3/Packages/User/*
+!Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
 
 Package\ Control.last-run
 Package\ Control.ca-list

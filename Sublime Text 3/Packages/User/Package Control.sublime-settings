@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Fix Mac Path",
+		"GitGutter",
+		"LoremIpsum",
+		"MoveText",
+		"One Dark Color Scheme",
+		"Package Control",
+		"Pandoc",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-clang",
+		"SublimeLinter-flake8",
+		"SublimeLinter-javac",
+		"Text Pastry",
+		"Theme - Gravity",
+		"WordCount"
+	],
+	"repositories":
+	[
+		"https://github.com/kublaios/dired"
+	]
+}

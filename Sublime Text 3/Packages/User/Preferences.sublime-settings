@@ -1,0 +1,83 @@
+{
+	"added_words":
+	[
+		"len"
+	],
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_cycle": true,
+	"auto_complete_with_fields": true,
+	"auto_find_in_selection": true,
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 1.5,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/One Dark (SL).tmTheme",
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": false,
+	"fade_fold_buttons": false,
+	"font_face": "menlo",
+	"font_options":
+	[
+		"gray_antialias"
+	],
+	"font_size": 13,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"ActionScript",
+		"AppleScript",
+		"ASP",
+		"C#",
+		"Clojure",
+		"D",
+		"Erlang",
+		"Go",
+		"Graphviz",
+		"Groovy",
+		"Haskell",
+		"Lisp",
+		"Lua",
+		"Matlab",
+		"OCaml",
+		"Pascal",
+		"Rust",
+		"Scala",
+		"TCL",
+		"Textile",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"indent_to_bracket": true,
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
+	"match_brackets_angle": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"reindent_on_save":
+	[
+		"css",
+		"SCSS",
+		"html",
+		"Js"
+	],
+	"rulers":
+	[
+		80
+	],
+	"scroll_speed": 2.0,
+	"shift_tab_unindent": true,
+	"show_full_path": true,
+	"spell_check": true,
+	"tab_size": 4,
+	"theme": "Gravity One.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_carat": true
+}

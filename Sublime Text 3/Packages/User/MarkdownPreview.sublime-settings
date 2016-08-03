@@ -1,0 +1,11 @@
+{
+    /*
+        Sets HTML output to a simple form:
+            - No head
+            - No body tags
+            - ids, classes, and style are stripped out
+            - Just bare minimum HTML tags and attributes
+            - extension modifications included
+    */
+    "html_simple": true,
+}
