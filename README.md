@@ -1,12 +1,12 @@
 # dotfiles
 
-My personal configuration for OSX, terminal setup, and dev environment.
+My personal configuration for macOS, terminal setup, and dev environment.
 
 # config.sh
 
 Automatigically configure a new Mac in one command, out of the box, with no prerequisites.
 
-Pulled a ton of stuff from my own research, but a lot of the OSX config comes from these two:
+Pulled a ton of stuff from my own research, but a lot of the macOSos config comes from these two:
 
 [Mathis Byens's dotfiles](https://github.com/mathiasbynens/dotfiles)
 
