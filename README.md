@@ -16,7 +16,7 @@ Pulled a ton of stuff from my own research, but a lot of the OSX config comes fr
 
 ## **BACKUP** your files.
 
-This script will not *remove* anything (except pesky ImageCapture.app) on your computer, but it will overwrite some things you may have configured.
+This script will not *remove* anything on your computer, but it will overwrite some things you may have configured.
 
 I recommend a full time machine backup for your system just in case, but at the very least you should backup your current dotfiles (.bashrc, .vimrc, .bash_profile, etc.). These will all be overwritten if you run config.sh without customization. See the step below for exactly what gets configured.
 
