@@ -28,7 +28,7 @@ I don't take responsibility for anything that happens to your machine.
 
 ## Customization
 
-If for any reason you don't like what a line does, aren't sure what it will do, or otherwise have any concerns, simply fork this repo and comment it out.
+If for any reason you don't like what a line does, aren't sure what it will do, or otherwise have any concerns, PM me, create an issue, pull request, or fork this repo and comment it out.
 
 ## To Install:
 
