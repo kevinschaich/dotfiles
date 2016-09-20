@@ -57,6 +57,7 @@ alias info3300="cd ~/Dropbox/jun2016/info3300"
 alias cs4820="cd ~/Dropbox/jun2016/cs4820"
 alias cs4410="cd ~/Dropbox/jun2016/cs4410"
 alias p2="cd ~/Dropbox/jun2016/info3300/projects/p2/billboard-top-100-lyrics"
+alias cps="cd Google\ Drive/Programming/cornell_photo_society/"
 
 # General aliases
 alias copy='fc -ln -1 | sed "1s/^[[:space:]]*//" | awk 1 ORS="" | pbcopy '
@@ -66,7 +67,6 @@ alias edit="atom ~/inf_portal_api ~/inf_iaas_api"
 alias mkdir="mkdir -p"
 alias mv="mv -iv"
 alias cp="cp -iv"
-alias rm="trash -v"
 alias del="mv $1 ~/.unixtrash"
 alias rd="rm -rfv"
 alias hd="head"

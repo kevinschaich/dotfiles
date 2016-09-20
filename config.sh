@@ -218,11 +218,11 @@ echo "Removing duplicates in the 'Open With' menu"
 ###############################################################################
 
 echo "Disabling press-and-hold for special keys in favor of key repeat"
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults read "Apple Global Domain" | grep -i press
+defaults write "Apple Global Domain" ApplePressAndHoldEnabled -bool false
 
 echo "Setting a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo "Setting trackpad & mouse speed to a reasonable number"
 defaults write -g com.apple.trackpad.scaling 3
