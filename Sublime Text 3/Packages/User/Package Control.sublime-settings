@@ -5,8 +5,10 @@
 	],
 	"installed_packages":
 	[
+		"ayu",
 		"Babel",
 		"BracketHighlighter",
+		"dired",
 		"Fix Mac Path",
 		"GitGutter",
 		"LoremIpsum",
@@ -20,11 +22,14 @@
 		"SublimeLinter-flake8",
 		"SublimeLinter-javac",
 		"Text Pastry",
-		"Theme - Gravity",
-		"WordCount"
+		"Theme - Gravity"
 	],
 	"repositories":
 	[
+		"https://github.com/titoBouzout/WordCount",
+		"https://github.com/titoBouzout/SideBarEnhancements",
+		"https://github.com/titoBouzout/SideBarEnhancements/tree/st3",
+		"https://github.com/titoBouzout/WordCount/tree/st3",
 		"https://github.com/kublaios/dired"
 	]
 }

@@ -39,19 +39,19 @@
       "site-packages",
       "venv"
     ],
-    "path": "/Users/kevinschaich/Google Drive/Programming/cracking_coding_interview_6e"
+    "path": "/Users/kevinschaich/Google Drive/Programming/interview_cake"
     }
   ],
   "build_systems":
   [
     {
       "name": "pytest",
-      "cmd": ["py.test", "$file_path"]
+      "cmd": ["py.test", "$file"]
     }
   ],
   "settings":
   {
     "tab_size": 4,
-    "python_interpreter": "/Users/kevinschaich/Google Drive/Programming/cracking_coding_interview_6e/venv/bin/python"
+    // "python_interpreter": "/Users/kevinschaich/Google Drive/Programming/.../venv/bin/python"
   }
 }

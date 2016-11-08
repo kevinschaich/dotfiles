@@ -16,18 +16,6 @@ source $ZSH/oh-my-zsh.sh
 
 function kp { ps -ef | grep "$@" | awk '{print $2}' | xargs sudo kill }
 
-# Shopkick aliases
-alias a="cd /Volumes/shopkick_repo/shopkick; pushd .; cd /Volumes/shopkick_repo/shopkick; source build/py/bin/activate; popd; cd /Volumes/shopkick_repo/shopkick;"
-alias s="./apps/shopkick/manage_backends.py bss"
-alias b="./apps/shopkick/manage_backends.py build && ./apps/shopkick/manage_backends.py start"
-alias tunnel="ssh -D 8080 bastion.shopkick.com"
-alias cleanup="find $SRC -type l | while read f; do if [ ! -e \"\$f\" ]; then rm -f \"\$f\"; fi; done"
-alias mysql="mysql -u root"
-alias make_android="activate; make -C apps/shopkick/strings build; touch apps/shopkick/strings/en.txt; make -C apps/shopkick/api build; make -C apps/shopkick/link_api build; make -C apps/shopkick/android/build_tools build;"
-alias repo="cd /Volumes/shopkick_repo/shopkick/"
-alias rt="/Volumes/shopkick_repo/shopkick/tools/build/continuous_runtests"
-alias clean="rm -rf /Volumes/shopkick_repo/shopkick/tools/grocery_circulars/downloads /Volumes/shopkick_repo/shopkick/tools/grocery_circulars/uploads"
-
 # Git aliases
 alias gs="git status"
 alias status="git status"
@@ -57,7 +45,8 @@ alias info3300="cd ~/Dropbox/jun2016/info3300"
 alias cs4820="cd ~/Dropbox/jun2016/cs4820"
 alias cs4410="cd ~/Dropbox/jun2016/cs4410"
 alias p2="cd ~/Dropbox/jun2016/info3300/projects/p2/billboard-top-100-lyrics"
-alias cps="cd Google\ Drive/Programming/cornell_photo_society/"
+alias cps="cd ~/Google\ Drive/Programming/cornell_photo_society/"
+alias cs4410="cd ~/Google\ Drive/school/sen2017/cs4410/"
 
 # General aliases
 alias copy='fc -ln -1 | sed "1s/^[[:space:]]*//" | awk 1 ORS="" | pbcopy '
@@ -75,6 +64,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias bashconfig="vim ~/.bash_profile"
 alias hook="scp -p -P 29418 kevin.schaich@gerrit.workday.com:hooks/commit-msg .git/hooks/"
+alias a="atom-beta"
 function hide(){
     defaults write com.apple.finder AppleShowAllFiles -bool NO
     killall Finder
