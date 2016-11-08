@@ -44,8 +44,7 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
 
-pip install flake8
-pip install pylama
+pip install pylint
 pip install pytest
 pip install -U py2app
 
