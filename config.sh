@@ -19,7 +19,6 @@ brew doctor
 brew update
 
 echo "Installing terminal utilities..."
-brew install coreutils
 brew install git
 brew install zsh
 brew install zsh-completions
@@ -29,15 +28,11 @@ brew install zsh-syntax-highlighting
 brew install wget
 brew install unrar
 brew install python
+brew install python3
 brew install ruby
 brew install tree
-brew install jpeg
-brew install libpng
-brew install libyaml
-brew install lzip
 brew install makedepend
 brew install node
-brew install p7zip
 brew install sqlite
 brew install gcc
 brew install caskroom/cask/brew-cask
@@ -46,7 +41,6 @@ brew tap caskroom/fonts
 
 pip install pylint
 pip install pytest
-pip install -U py2app
 
 npm install -g browser-sync
 
@@ -59,26 +53,22 @@ git config --global user.name "kevinschaich"
 echo "Installing applications/utilities/tools..."
 brew cask install java
 brew cask install iterm2
-brew cask install mactex
 brew cask install pandoc
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install adobe-creative-cloud
 brew cask install caffeine
-brew cask install chromecast
 brew cask install cyberduck
-brew cask install dropbox
 brew cask install skype
-brew cask install slack
+# brew cask install slack
 brew cask install spotify
+brew cask install mactex
 # brew cask install sublime-text3
 brew cask install utorrent
-# brew cask install flux
 brew cask install vlc
 brew cask install virtualbox
 brew cask install vagrant
 # brew cask install packer
-brew cask install xquartz
 brew cask install rstudio
 
 brew cask install qlcolorcode

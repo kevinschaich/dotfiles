@@ -46,7 +46,7 @@
   [
     {
       "name": "pytest",
-      "cmd": ["py.test", "$file"]
+      "cmd": ["py.test", "-v", "$file"]
     }
   ],
   "settings":

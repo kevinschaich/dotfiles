@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"ayu",
 		"Babel",
 		"BracketHighlighter",
 		"dired",
