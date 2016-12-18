@@ -29,6 +29,7 @@ brew install wget
 brew install unrar
 brew install python
 brew install python3
+brew install flake8
 brew install ruby
 brew install tree
 brew install makedepend
@@ -218,10 +219,10 @@ defaults write -g com.apple.trackpad.scaling 3
 defaults write -g com.apple.mouse.scaling 3
 
 echo "Disable display from automatically adjusting brightness"
-sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
+# sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 
 echo "Disable keyboard from automatically adjusting backlight brightness in low light"
-sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -bool false
+# sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -bool false
 
 ###############################################################################
 # Screen
