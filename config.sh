@@ -422,7 +422,7 @@ defaults write com.hegenberg.BetterSnapTool showMenubarIcon 0
 ###############################################################################
 
 echo "Setting up symlinks..."
-cd ~ && git clone https://github.com/kevinschaich/dotfiles/ && cd dotfiles
+cd ~ && git clone --recursive https://github.com/kevinschaich/dotfiles/ && cd dotfiles
 
 ln -sfF ~/dotfiles/.bashrc ~
 ln -sfF ~/dotfiles/.bash_profile ~
