@@ -34,4 +34,4 @@ If for any reason you don't like what a line does, aren't sure what it will do, 
 
 Simply copy and paste into Terminal. Sit back and enjoy.
 
-`curl -L https://raw.githubusercontent.com/kevinschaich/dotfiles/master/config.sh | sh`
+`curl -L https://raw.githubusercontent.com/kevinschaich/dotfiles/master/script/bootstrap.sh | sh`
