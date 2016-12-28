@@ -2,6 +2,9 @@
 
 My personal configuration for macOS, terminal setup, and dev environment.
 
+![iTerm2](img/terminal.png)
+![sublime](img/sublime.png)
+
 # config.sh
 
 Automatigically configure a new Mac in one command, out of the box, with no prerequisites.

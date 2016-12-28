@@ -14,7 +14,6 @@ then
     ############################################################################
 
     echo "Setting up symlinks..."
-    cd ~ && git clone --recursive https://github.com/kevinschaich/dotfiles/ && cd dotfiles
 
     ln -sfF ~/dotfiles/.iterm2 ~
     ln -sfF ~/dotfiles/.inputrc ~
