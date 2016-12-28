@@ -1,0 +1,41 @@
+function kp { ps -ef | grep "$@" | awk '{print $2}' | xargs sudo kill }
+
+# Git aliases
+alias gs="git status"
+alias status="git status"
+alias gsa="clustergit --recursive -d ."
+alias gd="git diff"
+alias ga="git add -A"
+alias add="git add -A"
+alias gc="git commit"
+alias commit="git commit"
+alias gca="git commit --amend"
+alias gp="git push"
+alias push="git push"
+alias pull="git pull"
+gpa() { git add -A && git commit -m  "$*" && git push; }
+alias zapem="gs | grep DS_Store | awk '{print $2}' | xargs git checkout"
+
+# Path aliases
+
+# General aliases
+alias copy='fc -ln -1 | sed "1s/^[[:space:]]*//" | awk 1 ORS="" | pbcopy '
+alias mkdir="mkdir -p"
+alias mv="mv -iv"
+alias cp="cp -iv"
+alias del="mv $1 ~/.unixtrash"
+alias rd="rm -rfv"
+alias hd="head"
+alias tl="tail"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias bashconfig="vim ~/.bash_profile"
+alias a="atom-beta"
+function hide(){
+    defaults write com.apple.finder AppleShowAllFiles -bool NO
+    killall Finder
+}
+function show(){
+    defaults write com.apple.finder AppleShowAllFiles -bool YES
+    killall Finder
+}
