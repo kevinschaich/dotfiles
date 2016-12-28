@@ -35,6 +35,4 @@ If for any reason you don't like what a line does, aren't sure what it will do, 
 
 ## To Install:
 
-Simply copy and paste into Terminal. Sit back and enjoy.
-
-`curl -L https://raw.githubusercontent.com/kevinschaich/dotfiles/master/config.sh | sh`
+`cd ~ && git clone --recursive https://github.com/kevinschaich/dotfiles/ && ~/dotfiles/script/bootstrap.sh`
