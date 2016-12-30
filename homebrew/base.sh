@@ -17,6 +17,7 @@ brew install zsh-completions
 brew install zsh-history-substring-search
 brew install zsh-completions
 brew install zsh-syntax-highlighting
+chsh -s /bin/zsh
 
 echo "Installing iTerm2..."
 brew cask install iterm2
