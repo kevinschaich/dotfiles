@@ -7,7 +7,7 @@ export UPDATE_ZSH_DAYS=5
 ZSH_THEME="steeef"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git brew cask meteor osx pip python sudo vagrant zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(git brew meteor osx pip python sudo vagrant zsh-syntax-highlighting zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/.zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh

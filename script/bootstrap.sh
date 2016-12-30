@@ -60,7 +60,7 @@ then
     # Git credential helper
     ############################################################################
 
-    read -p "Configure git credential helper (kevinschaich)? Answer [y/n] " -n 1 -r
+    read -p "Configure git credential helper (@kevinschaich)? Answer [y/n] " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
@@ -75,8 +75,11 @@ then
     # Install Utilities
     ############################################################################
 
+    echo "Bootstrapping base terminal config..."
+    bash ~/dotfiles/homebrew/base.sh
+
     # from http://stackoverflow.com/questions/1885525/how-do-i-prompt-a-user-for-confirmation-in-bash-script
-    read -p "Install utilities? Answer [y/n] " -n 1 -r
+    read -p "Install terminal utilities? Answer [y/n] " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]
     then

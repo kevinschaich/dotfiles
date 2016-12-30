@@ -42,6 +42,7 @@ defaults write "Apple Global Domain" ApplePressAndHoldEnabled -bool false
 
 echo "Setting a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 3
 
 echo "Setting trackpad & mouse speed to a reasonable number"
 defaults write -g com.apple.trackpad.scaling 3

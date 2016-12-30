@@ -26,3 +26,4 @@ set show-all-if-unmodified on
 set skip-completed-text on
 
 set visible-stats on
+set colored-stats on

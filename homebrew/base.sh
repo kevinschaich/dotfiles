@@ -3,7 +3,7 @@
 echo "Installing command line tools..."
 xcode-select --install
 
-echo "Installing Homebrew..."
+echo "Installing Homebrew & Homebrew Cask..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 brew update
