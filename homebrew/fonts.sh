@@ -54,3 +54,8 @@ brew cask install font-roboto-slab
 brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 brew cask install font-source-serif-pro
+brew cask install font-work-sans
+brew cask install font-karla
+brew cask install font-noto-sans
+brew cask install font-arimo
+brew cask install font-hind

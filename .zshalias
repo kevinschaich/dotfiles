@@ -1,5 +1,8 @@
 function kp { ps -ef | grep "$@" | awk '{print $2}' | xargs sudo kill }
 
+alias zshalias="vim ~/dotfiles/.zshalias"
+alias sclean="rm -rf ~/dotfiles/Sublime\ Text\ 3/Cache ~/dotfiles/Sublime\ Text\ 3/Local/Session.sublime_session ~/dotfiles/Sublime\ Text\ 3/Index"
+
 # Git aliases
 alias gs="git status"
 alias status="git status"

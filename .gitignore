@@ -1,6 +1,3 @@
-**/.DS_Store
-**/*.sublime-workspace
-
 Sublime\ Text\ 3/Cache/
 Sublime\ Text\ 3/Backup/
 Sublime\ Text\ 3/Index/
@@ -22,3 +19,8 @@ Package\ Control.merged-ca-bundle
 Package\ Control.user-ca-bundle
 SideBarEnhancements/
 SublimeLinter/
+Sublime Text 3/Packages/User/TextPastryHistory.sublime-settings
+Sublime Text 3/Packages/User/oscrypto-ca-bundle.crt
+
+**/*.sublime-workspace
+**/.DS_Store

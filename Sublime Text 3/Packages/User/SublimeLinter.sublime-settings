@@ -14,13 +14,27 @@
                 "extra_flags": "",
                 "include_dirs": []
             },
+            "eslint": {
+                "@disable": false,
+                "args": [],
+                "excludes": [
+                    "no-unused-vars"
+                ],
+                "show-code": true,
+                "ignore": [
+                    "no-unused-vars"
+                ]
+            },
             "flake8": {
                 "@disable": false,
                 "args": [],
                 "builtins": "",
                 "excludes": [],
                 "executable": "",
-                "ignore": ["E111", "E114",],
+                "ignore": [
+                    "E111",
+                    "E114"
+                ],
                 "jobs": "1",
                 "max-complexity": -1,
                 "max-line-length": 100,

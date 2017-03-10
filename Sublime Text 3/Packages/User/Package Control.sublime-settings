@@ -5,23 +5,31 @@
 	],
 	"installed_packages":
 	[
+		"1337 Color Scheme",
 		"Babel",
+		"Boxy Theme",
 		"BracketHighlighter",
+		"Cobalt2 Flat Theme",
+		"ColorPick",
 		"dired",
+		"Emmet",
+		"ExpandRegion",
 		"Fix Mac Path",
 		"GitGutter",
+		"HTML-CSS-JS Prettify",
 		"LoremIpsum",
+		"MarkdownEditing",
 		"MoveText",
-		"One Dark Color Scheme",
+		"Oceanic Next Color Scheme",
 		"Package Control",
+		"PackageResourceViewer",
 		"Pandoc",
+		"React Development Snippets",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-contrib-clang",
 		"SublimeLinter-flake8",
-		"SublimeLinter-javac",
 		"Text Pastry",
-		"Theme - Gravity"
+		"Theme - Cobalt2"
 	],
 	"repositories":
 	[

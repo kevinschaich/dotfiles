@@ -9,25 +9,34 @@
 	"auto_complete_with_fields": true,
 	"auto_find_in_selection": true,
 	"bold_folder_labels": true,
-	"caret_extra_bottom": 4,
-	"caret_extra_top": 4,
-	"caret_extra_width": 1.5,
+	"caret_extra_bottom": 5,
+	"caret_extra_top": 5,
+	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/One Dark (SL).tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
+	"detect_indentation": false,
 	"drag_text": false,
-	"ensure_newline_at_eof_on_save": false,
+	"draw_centered": false,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store"
+	],
 	"folder_exclude_patterns":
 	[
 		".meteor",
-		".git"
+		".git",
+		"node_modules",
+		"build"
 	],
 	"font_face": "Roboto Mono",
 	"font_options":
 	[
 		"gray_antialias"
 	],
-	"font_size": 13,
+	"font_size": 15,
 	"gravity_highlight_color_blue": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -49,6 +58,7 @@
 		"Matlab",
 		"OCaml",
 		"Pascal",
+		"React Development Snippets",
 		"Rust",
 		"Scala",
 		"TCL",
@@ -63,7 +73,11 @@
 	"indent_to_bracket": true,
 	"line_padding_bottom": 4,
 	"line_padding_top": 4,
+	"margin": 4,
 	"match_brackets_angle": true,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"reindent_on_save":
@@ -81,8 +95,8 @@
 	"shift_tab_unindent": true,
 	"show_full_path": true,
 	"spell_check": true,
-	"tab_size": 4,
-	"theme": "Gravity One.sublime-theme",
+	"tab_size": 2,
+	"theme": "Boxy Ocean.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_carat": true
