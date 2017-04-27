@@ -10,12 +10,12 @@ brew install ruby
 brew install tree
 brew install makedepend
 brew install node
-npm install -g browser-sync
-brew install sqlite
-brew install gcc
+brew install yarn
+brew install mysql
+brew install mongodb
 pip install pylint
 pip install pytest
-curl https://install.meteor.com/ | sh
+yarn global add create-react-app
 
 echo "Installing Quick Look Utilities..."
 brew cask install qlcolorcode
@@ -24,4 +24,5 @@ brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install quicklook-csv
 
-brew cask install google-chrome
+brew cask install google-chrome-beta
+brew cask install firefox
