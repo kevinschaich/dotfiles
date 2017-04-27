@@ -11,6 +11,8 @@ brew cask install spotify
 brew cask install utorrent
 brew cask install vlc
 brew cask install slack
+brew cask install figma
+brew cask install messenger
 # brew cask install java
 # brew cask install virtualbox
 # brew cask install vagrant
