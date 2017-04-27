@@ -24,6 +24,7 @@ brew cask install iterm2
 
 echo "Installing Sublime Text dev build..."
 brew cask install sublime-text-dev
+brew cask install atom-beta
 
 echo "Cleaning Up..."
 brew cleanup
