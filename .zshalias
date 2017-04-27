@@ -6,7 +6,7 @@ alias sclean="rm -rf ~/dotfiles/Sublime\ Text\ 3/Cache ~/dotfiles/Sublime\ Text\
 # Git aliases
 alias gs="git status"
 alias status="git status"
-alias gsa="clustergit --recursive -d ."
+alias gsa="~/dotfiles/clustergit/clustergit --recursive -d ."
 alias gd="git diff"
 alias ga="git add -A"
 alias add="git add -A"
