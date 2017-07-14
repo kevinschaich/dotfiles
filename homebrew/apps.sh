@@ -1,14 +1,13 @@
 #!/bin/bash
 
 echo "Installing applications/utilities/tools..."
-brew cask install pandoc
-brew cask install google-drive
+# brew cask install pandoc
 brew cask install adobe-creative-cloud
 brew cask install caffeine
-brew cask install cyberduck
+# brew cask install cyberduck
 brew cask install skype
 brew cask install spotify
-brew cask install utorrent
+brew cask install bittorrent
 brew cask install vlc
 brew cask install slack
 brew cask install figma
