@@ -15,7 +15,6 @@ brew install mysql
 brew install mongodb
 pip install pylint
 pip install pytest
-yarn global add create-react-app
 
 echo "Installing Quick Look Utilities..."
 brew cask install qlcolorcode
@@ -24,5 +23,5 @@ brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install quicklook-csv
 
-brew cask install google-chrome-beta
-brew cask install firefox
+# brew cask install google-chrome-beta
+# brew cask install firefox
