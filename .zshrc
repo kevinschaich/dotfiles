@@ -15,8 +15,6 @@ source ~/dotfiles/.zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 # source aliases
 source ~/dotfiles/.zshalias
 
-source ~/.spotipy
-
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey '^[[A' history-substring-search-up
