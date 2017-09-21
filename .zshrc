@@ -7,7 +7,8 @@ export UPDATE_ZSH_DAYS=5
 ZSH_THEME="steeef"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(z git brew meteor osx pip python sudo x vagrant zsh-syntax-highlighting zsh-history-substring-search node npm)
+# plugins=(z git brew meteor osx pip python sudo x vagrant zsh-syntax-highlighting zsh-history-substring-search node npm)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/.zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
@@ -19,3 +20,4 @@ source ~/dotfiles/.zshalias
 zmodload zsh/terminfo
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+source /usr/local/dev-env/bin/profile

@@ -13,18 +13,35 @@ brew install caskroom/cask/brew-cask
 echo "Installing zsh utilities..."
 brew install git
 brew install zsh
-brew install zsh-completions
-brew install zsh-history-substring-search
-brew install zsh-completions
-brew install zsh-syntax-highlighting
+git clone --recursive git@github.com:kevinschaich/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
 chsh -s /bin/zsh
 
 echo "Installing iTerm2..."
-brew cask install iterm2
+brew cask install iterm2-beta
 
-echo "Installing Sublime Text dev build..."
-brew cask install sublime-text-dev
-brew cask install atom-beta
+echo "Installing VS Code insiders build..."
+brew cask install visual-studio-code-insiders
+code-insiders --install-extension Zarel.sublime-commands
+code-insiders --install-extension christian-kohler.npm-intellisense
+code-insiders --install-extension christian-kohler.path-intellisense
+code-insiders --install-extension eg2.tslint
+code-insiders --install-extension eg2.vscode-npm-script
+code-insiders --install-extension ms-vscode.atom-keybindings
+code-insiders --install-extension rafaelmaiolla.remote-vscode
+code-insiders --install-extension wmaurer.vscode-jumpy
+code-insiders --install-extension zhuangtongfa.Material-theme
+
+echo "Installing IINA"
+brew cask install iina
+
+echo "Installing Spotify"
+brew cask install spotify
 
 echo "Cleaning Up..."
 brew cleanup

@@ -24,35 +24,24 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 echo "Removing duplicates in the 'Open With' menu"
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
-###############################################################################
-# General Power and Performance modifications
-###############################################################################
-
-# echo "Speeding up wake from sleep"
-# http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
-# sudo pmset -a standbydelay 86400
-
 ################################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
 ###############################################################################
 
 echo "Disabling press-and-hold for special keys in favor of key repeat"
-defaults read "Apple Global Domain" | grep -i press
-defaults write "Apple Global Domain" ApplePressAndHoldEnabled -bool false
-
-echo "Setting a blazingly fast keyboard repeat rate"
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain KeyRepeat -int 3
 
 echo "Setting trackpad & mouse speed to a reasonable number"
 defaults write -g com.apple.trackpad.scaling 3
 defaults write -g com.apple.mouse.scaling 3
 
 echo "Disable display from automatically adjusting brightness"
-# sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
+sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 
 echo "Disable keyboard from automatically adjusting backlight brightness in low light"
-# sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -bool false
+sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -bool false
 
 ###############################################################################
 # Screen

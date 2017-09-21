@@ -22,6 +22,3 @@ brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install quicklook-csv
-
-# brew cask install google-chrome-beta
-# brew cask install firefox

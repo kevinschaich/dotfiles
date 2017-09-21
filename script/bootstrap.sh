@@ -18,13 +18,8 @@ then
     ln -sfF ~/dotfiles/.iterm2 ~
     ln -sfF ~/dotfiles/.inputrc ~
     ln -sfF ~/dotfiles/.vimrc ~
-    ln -sfF ~/dotfiles/.zshrc ~
-    ln -sfF ~/dotfiles/.oh-my-zsh ~
-    sudo rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/
-    sudo ln -sfF ~/dotfiles/Sublime\ Text\ 3 ~/Library/Application\ Support/
-    sudo cp ~/dotfiles/dark.terminal /Applications/Utilities/Terminal.app/Contents/Resources/Initial\ Settings/
-    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
+    mkdir ~/Library/Application\ Support/Code\ -\ Insiders/
+    ln -sfF ~/dotfiles/vscode ~/Library/Application\ Support/Code\ -\ Insiders/User
 
     ############################################################################
     # Terminal
@@ -47,29 +42,8 @@ then
     # Settings
     ############################################################################
 
-    read -p "Bootstrap personal settings? Answer [y/n] " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-        # do dangerous stuff
-        bash ~/dotfiles/script/config.sh
-    fi
-
-
-    ############################################################################
-    # Git credential helper
-    ############################################################################
-
-    read -p "Configure git credential helper (@kevinschaich)? Answer [y/n] " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-        # do dangerous stuff
-        git config --global credential.helper osxkeychain
-        git config --global user.email "schaich.kevin@gmail.com"
-        git config --global user.name "kevinschaich"
-    fi
-
+    echo "Bootstrapping personal settings"
+    bash ~/dotfiles/script/config.sh
 
     ############################################################################
     # Install Utilities
@@ -78,26 +52,23 @@ then
     echo "Bootstrapping base terminal config..."
     bash ~/dotfiles/homebrew/base.sh
 
-    # from http://stackoverflow.com/questions/1885525/how-do-i-prompt-a-user-for-confirmation-in-bash-script
-    read -p "Install terminal utilities? Answer [y/n] " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-        # do dangerous stuff
-        bash ~/dotfiles/homebrew/util.sh
-    fi
-
+    echo "Installing Terminal Utilities"
+    bash ~/dotfiles/homebrew/util.sh
 
     ############################################################################
     # Install Apps
     ############################################################################
 
-    read -p "Install apps? Answer [y/n] " -n 1 -r
+    read -p "Work Laptop? Answer [y/n] " -n 1 -r
     echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
+    if [[ $REPLY =~ ^[Nn]$ ]]
     then
         # do dangerous stuff
         bash ~/dotfiles/homebrew/apps.sh
+
+        git config --global credential.helper osxkeychain
+        git config --global user.email "schaich.kevin@gmail.com"
+        git config --global user.name "kevinschaich"
     fi
 
 
@@ -105,13 +76,8 @@ then
     # Install Fonts
     ############################################################################
 
-    read -p "Install fonts? Answer [y/n] " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-        # do dangerous stuff
-        bash ~/dotfiles/homebrew/fonts.sh
-    fi
+    echo "Installing Fonts"
+    bash ~/dotfiles/homebrew/fonts.sh
 fi
 
 echo "Done!"

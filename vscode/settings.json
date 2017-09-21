@@ -1,0 +1,47 @@
+{
+    "typescript.check.npmIsInstalled": false,
+    "editor.lineHeight": 20,
+    "window.zoomLevel": 0,
+    "editor.scrollBeyondLastLine": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "atomKeymap.promptV3Features": null,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.cursorStyle": "line",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    "editor.rulers": [
+        100
+    ],
+    "editor.tabSize": 4,
+    "editor.minimap.showSlider": "always",
+    "editor.mouseWheelScrollSensitivity": 1.5,
+    "editor.formatOnType": true,
+    "editor.cursorBlinking": "phase",
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlight": "all",
+    "editor.dragAndDrop": false,
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "search.useIgnoreFilesByDefault": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.renderWhitespace": "none",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontLigatures": true,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "remote.onstartup": true
+}

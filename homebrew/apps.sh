@@ -6,9 +6,7 @@ brew cask install adobe-creative-cloud
 # brew cask install caffeine
 # brew cask install cyberduck
 # brew cask install skype
-brew cask install spotify
 brew cask install bittorrent
-brew cask install iina
 brew cask install slack
 brew cask install figma
 brew cask install messenger
