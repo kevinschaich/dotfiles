@@ -3,7 +3,7 @@
 My personal configuration for macOS, terminal setup, and dev environment.
 
 ![iTerm2](img/terminal.png)
-![sublime](img/sublime.png)
+![vscode](img/vscode.png)
 
 # config.sh
 
