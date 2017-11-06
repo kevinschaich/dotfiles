@@ -13,11 +13,11 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true
+        "**/.DS_Store": true
+        // "**/node_modules": true
     },
     "editor.rulers": [
-        100
+        120
     ],
     "editor.tabSize": 4,
     "editor.minimap.showSlider": "always",
@@ -27,7 +27,7 @@
     "editor.fontLigatures": true,
     "editor.renderLineHighlight": "all",
     "editor.dragAndDrop": false,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "search.useIgnoreFilesByDefault": true,
@@ -41,7 +41,21 @@
     "editor.renderWhitespace": "none",
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    "terminal.integrated.fontLigatures": true,
+    // "terminal.integrated.fontLigatures": true,
     "window.title": "${activeEditorLong}${separator}${rootName}",
-    "remote.onstartup": true
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "package-lock.json": true
+    },
+    "extensions.ignoreRecommendations": true,
+    "editor.stablePeek": true,
+    "workbench.editor.enablePreview": false,
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "prettier.parser": "babylon",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "gitlens.codeLens.enabled": false
 }

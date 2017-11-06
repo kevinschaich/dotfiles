@@ -27,14 +27,19 @@ brew cask install iterm2-beta
 
 echo "Installing VS Code insiders build..."
 brew cask install visual-studio-code-insiders
+
+code-insiders --install-extension PeterJausovec.vscode-docker
 code-insiders --install-extension Zarel.sublime-commands
-code-insiders --install-extension christian-kohler.npm-intellisense
-code-insiders --install-extension christian-kohler.path-intellisense
+# code-insiders --install-extension christian-kohler.npm-intellisense
+# code-insiders --install-extension christian-kohler.path-intellisense
+code-insiders --install-extension eamodio.gitlens
 code-insiders --install-extension eg2.tslint
-code-insiders --install-extension eg2.vscode-npm-script
+code-insiders --install-extension esbenp.prettier-vscode
 code-insiders --install-extension ms-vscode.atom-keybindings
-code-insiders --install-extension rafaelmaiolla.remote-vscode
-code-insiders --install-extension wmaurer.vscode-jumpy
+code-insiders --install-extension msjsdiag.debugger-for-chrome
+# code-insiders --install-extension rafaelmaiolla.remote-vscode
+code-insiders --install-extension stringham.move-ts
+# code-insiders --install-extension wmaurer.vscode-jumpy
 code-insiders --install-extension zhuangtongfa.Material-theme
 
 echo "Installing IINA"

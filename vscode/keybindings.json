@@ -4,10 +4,22 @@
         "key": "shift+enter",
         "command": "extension.jumpy-word",
         "when": "editorTextFocus"
-    }
-{
+    },
+    {
         "key": "Escape",
         "command": "extension.jumpy-exit",
         "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    {
+        "key": "cmd+shift+\\",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
     }
 ]
