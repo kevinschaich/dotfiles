@@ -1,36 +1,35 @@
 {
     "typescript.check.npmIsInstalled": false,
     "editor.lineHeight": 20,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 4,
     "editor.scrollBeyondLastLine": false,
     "workbench.colorTheme": "One Dark Pro",
-    "atomKeymap.promptV3Features": null,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.cursorStyle": "line",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
-        // "**/node_modules": true
+        "**/.DS_Store": true,
+        // "**/node_modules": true,
+        "**/build": true,
     },
     "editor.rulers": [
         120
     ],
     "editor.tabSize": 4,
     "editor.minimap.showSlider": "always",
-    "editor.mouseWheelScrollSensitivity": 1.5,
+    "editor.mouseWheelScrollSensitivity": 0.5,
     "editor.formatOnType": true,
     "editor.cursorBlinking": "phase",
     "editor.fontLigatures": true,
     "editor.renderLineHighlight": "all",
-    "editor.dragAndDrop": false,
+    "editor.dragAndDrop": true,
     "editor.formatOnSave": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "search.useIgnoreFilesByDefault": true,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "editor.quickSuggestions": {
@@ -41,21 +40,91 @@
     "editor.renderWhitespace": "none",
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    // "terminal.integrated.fontLigatures": true,
     "window.title": "${activeEditorLong}${separator}${rootName}",
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
-        "package-lock.json": true
+        "package-lock.json": true,
+        "**/build": true,
     },
-    "extensions.ignoreRecommendations": true,
     "editor.stablePeek": true,
     "workbench.editor.enablePreview": false,
     "prettier.printWidth": 120,
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "all",
     "prettier.parser": "babylon",
-    "workbench.iconTheme": "vscode-icons",
-    "vsicons.dontShowNewVersionMessage": true,
-    "gitlens.codeLens.enabled": false
+    "workbench.iconTheme": null,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "workbench.sideBar.location": "left",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "[typescriptreact]": {},
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.snippetSuggestions": "top",
+    "explorer.confirmDragAndDrop": true,
+    "editor.autoIndent": false,
+    "git.autorefresh": false,
+    "git.enabled": false,
+    "git.autoRepositoryDetection": false,
+    "explorer.confirmDelete": false,
+    "python.formatting.provider": "yapf",
+    "extensions.ignoreRecommendations": false,
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on",
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.wordWrapColumn": 100,
+        "editor.wordWrap": "bounded",
+        "editor.lineHeight": 25,
+        "editor.rulers": [
+            100
+        ]
+    },
+    "[python]": {
+        "editor.rulers": [
+            100
+        ]
+    },
+    "[javascript]": {
+        "editor.rulers": [
+            100
+        ],
+        "editor.tabSize": 4,
+    },
+    "[typescriptreact]": {
+        "editor.rulers": [
+            100
+        ],
+        "editor.tabSize": 4,
+    },
+    "window.restoreWindows": "none",
+    "window.newWindowDimensions": "maximized",
+    "files.associations": {
+        "*.mesa": "groovy"
+    },
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "python.formatting.yapfPath": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "/Users/kschaich/.style.yapf"
+    ],
 }
