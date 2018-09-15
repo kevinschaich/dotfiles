@@ -5,12 +5,14 @@
 ############################################################################
 
 echo "Setting up symlinks..."
-ln -sfF ~/dotfiles/.iterm2 ~
+mkdir -p ~/.iterm2
+mkdir -p ~/Library/Application\ Support/Code/User
 ln -sfF ~/dotfiles/.inputrc ~
 ln -sfF ~/dotfiles/.vimrc ~
 ln -sfF ~/dotfiles/.zshrc ~
-mkdir ~/Library/Application\ Support/Code
-ln -sfF ~/dotfiles/vscode ~/Library/Application\ Support/Code/User
+ln -sfF ~/dotfiles/.iterm2.plist ~/.iterm2/com.googlecode.iterm2.plist
+ln -sfF ~/dotfiles/.code-settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sfF ~/dotfiles/.code-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 ############################################################################
 # Terminal
