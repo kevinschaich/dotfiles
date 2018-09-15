@@ -1,0 +1,30 @@
+{
+    // Visual/Style Tweaks
+    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 24,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.rulers": [120],
+
+    // Operation more similar to Sublime
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.scrollBeyondLastLine": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "window.closeWhenEmpty": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/yarn.lock": true
+    },
+    "prettier.tabWidth": 4,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.userWords": [
+        "palantir"
+    ],
+    "breadcrumbs.enabled": true,
+}
