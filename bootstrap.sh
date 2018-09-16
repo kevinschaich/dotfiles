@@ -30,9 +30,6 @@ xcode-select --install
 
 echo "Installing Homebrew & Homebrew Cask..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew tap caskroom/versions
-brew install caskroom/cask/brew-cask
 
 echo "Installing zsh utilities..."
 brew install git zsh
@@ -53,7 +50,7 @@ fi
 ############################################################################
 
 echo "Installing apps..."
-brew cask install brave iterm2-beta visual-studio-code iina spotify
+brew cask install brave iterm2-beta visual-studio-code iina spotify caprine kap alfred
 
 echo "Installing terminal utilities..."
 brew install wget unrar python python3 tree node yarn
@@ -72,10 +69,10 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
 
 echo "Disabling press-and-hold for special keys in favor of key repeat"
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
 
-echo "Setting trackpad & mouse speed to a reasonable number"
+echo "Setting trackpad & mouse speed"
 defaults write -g com.apple.trackpad.scaling 3
 defaults write -g com.apple.mouse.scaling 3
 
@@ -87,7 +84,7 @@ sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Aut
 ###############################################################################
 
 echo "Disabling subpixel font rendering on non-Apple LCDs"
-defaults write NSGlobalDomain AppleFontSmoothing -int 0
+defaults write -g AppleFontSmoothing -int 0
 
 echo "Disabling subpixel font/image smoothing in Preview"
 defaults write com.apple.Preview PVPDFAntiAliasOption 0
@@ -100,7 +97,7 @@ echo "Show the ~/Library folder by default"
 chflags nohidden ~/Library/
 
 echo "Show all filename extensions in Finder by default"
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write -g AppleShowAllExtensions -bool true
 
 echo "Show status bar in Finder by default"
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -139,7 +136,7 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0
 
 echo "Disable window animations"
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 
 echo "Disable dashboard"
 defaults write com.apple.dashboard mcx-disabled -boolean YES
