@@ -25,3 +25,7 @@ As one command:
 ```bash
 cd && git clone git@github.com:kevinschaich/dotfiles.git && chmod u+x ~/dotfiles/bootstrap.sh && ~/dotfiles/bootstrap.sh
 ```
+
+## License
+
+MIT © [Kevin Schaich](https://kevinschaich.io)
