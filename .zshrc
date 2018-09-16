@@ -8,13 +8,18 @@ source ~/.bash_profile
 source ~/.work-alias
 
 # Defaults
-export BROWSER='open'
-export EDITOR='code'
-export VISUAL='code'
-export PAGER='less'
-export LANG='en_US.UTF-8'
+export HISTSIZE=5000
+export SAVEHIST=5000
+export BROWSER=open
+export EDITOR=code
+export VISUAL=code
+export PAGER=less
+export LANG=en_US.UTF-8
+export HISTFILE=~/.zsh_history
 
 # Aliases
+alias -g ...='../..'
+alias -g ....='../../..'
 alias ls='ls -G'
 alias c='code'
 alias gs='git status'
@@ -40,26 +45,3 @@ function show(){
 }
 
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
-# ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
-# ZSH_HIGHLIGHT_PATTERNS=('ls' 'fg=blue,bg=blue')
-
-# Archive
-# alias ga="git add -A"
-# alias push="git push"
-# alias pull="git pull"
-# alias stash="git stash --keep-index"
-# alias copy='fc -ln -1 | sed "1s/^[[:space:]]*//" | awk 1 ORS="" | pbcopy '
-# alias mv="mv -iv"
-# alias cp="cp -iv"
-# alias sort="gsort"
-# alias du="gdu"
-# alias rd="rm -rfv"
-# alias hd="head"
-# alias tl="tail"
-# alias zapem="gs | grep DS_Store | awk '{print $2}' | xargs git checkout"
-# alias yarn-work="yarn config delete registry -g"
-# alias yarn-public="yarn config set registry "https://registry.yarnpkg.com" -g"
-# alias dcu='docker-compose up -d'
-# alias dcps='docker-compose ps'
-# export PATH="/usr/local/opt/node@8/bin:$PATH"
