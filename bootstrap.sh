@@ -30,7 +30,6 @@ xcode-select --install
 
 echo "Installing Homebrew & Homebrew Cask..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
 brew update
 brew tap caskroom/versions
 brew install caskroom/cask/brew-cask
