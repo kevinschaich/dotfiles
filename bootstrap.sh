@@ -5,6 +5,8 @@
 ############################################################################
 
 echo "Setting up symlinks..."
+touch ~/.work-alias
+touch ~/.bash_profile
 mkdir -p ~/.iterm2
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -sfF ~/dotfiles/.inputrc ~
@@ -15,15 +17,8 @@ ln -sfF ~/dotfiles/.code-settings.json ~/Library/Application\ Support/Code/User/
 ln -sfF ~/dotfiles/.code-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 ############################################################################
-# Terminal
+# Shell
 ############################################################################
-
-echo "Setting User Preferences folder"
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.iterm2"
-
-echo "Don’t display the annoying prompt when quitting iTerm"
-defaults write com.googlecode.iterm2 PromptOnQuit -bool FALSE
 
 echo "Installing command line tools..."
 xcode-select --install
@@ -50,15 +45,84 @@ fi
 ############################################################################
 
 echo "Installing apps..."
-brew cask install brave iterm2-beta visual-studio-code iina spotify caprine kap alfred
+brew cask install 1password
+brew cask install brave
+brew cask install iterm2
+brew cask install visual-studio-code
+brew cask install iina
+brew cask install spotify
+brew cask install caprine
+brew cask install kap
+brew cask install alfred
 
 echo "Installing terminal utilities..."
-brew install wget unrar python python3 tree node yarn
+brew install wget
+brew install unrar
+brew install python
+brew install python3
+brew install tree
+brew install node
+brew install yarn
 npm install --global pure-prompt
 
 echo "Installing Fonts..."
 brew tap caskroom/fonts
-brew cask install font-hack font-fontawesome font-alegreya-sans-sc font-alegreya-sans font-alegreya-sc font-alegreya font-bebas-neue font-cardo font-charter font-code font-crimson-text font-droid-sans font-droid-sans-mono font-droid-serif font-fira-code font-fira-mono font-fira-sans font-fjord font-inconsolata font-josefin-sans font-josefin-slab font-lato font-league-gothic font-league-script font-league-spartan font-liberation-mono-for-powerline font-liberation-sans font-linden-hill font-lobster-two font-lora font-merriweather font-merriweather-sans font-montserrat font-nexa font-open-sans font-open-sans-condensed font-oswald font-playfair-display font-playfair-display-sc font-pt-mono font-pt-sans font-pt-serif font-quicksand font-raleway font-roboto font-roboto-condensed font-roboto-mono font-roboto-slab font-source-code-pro font-source-sans-pro font-source-serif-pro font-work-sans font-karla font-noto-sans font-arimo font-hind
+brew cask install font-hack
+brew cask install font-fontawesome
+brew cask install font-alegreya-sans-sc
+brew cask install font-alegreya-sans
+brew cask install font-alegreya-sc
+brew cask install font-alegreya
+brew cask install font-bebas-neue
+brew cask install font-cardo
+brew cask install font-charter
+brew cask install font-code
+brew cask install font-crimson-text
+brew cask install font-droid-sans
+brew cask install font-droid-sans-mono
+brew cask install font-droid-serif
+brew cask install font-fira-code
+brew cask install font-fira-mono
+brew cask install font-fira-sans
+brew cask install font-fjord
+brew cask install font-inconsolata
+brew cask install font-josefin-sans
+brew cask install font-josefin-slab
+brew cask install font-lato
+brew cask install font-league-gothic
+brew cask install font-league-script
+brew cask install font-league-spartan
+brew cask install font-liberation-mono-for-powerline
+brew cask install font-liberation-sans
+brew cask install font-linden-hill
+brew cask install font-lobster-two
+brew cask install font-lora
+brew cask install font-merriweather
+brew cask install font-merriweather-sans
+brew cask install font-montserrat
+brew cask install font-nexa
+brew cask install font-open-sans
+brew cask install font-open-sans-condensed
+brew cask install font-oswald
+brew cask install font-playfair-display
+brew cask install font-playfair-display-sc
+brew cask install font-pt-mono
+brew cask install font-pt-sans
+brew cask install font-pt-serif
+brew cask install font-quicksand
+brew cask install font-raleway
+brew cask install font-roboto
+brew cask install font-roboto-condensed
+brew cask install font-roboto-mono
+brew cask install font-roboto-slab
+brew cask install font-source-code-pro
+brew cask install font-source-sans-pro
+brew cask install font-source-serif-pro
+brew cask install font-work-sans
+brew cask install font-karla
+brew cask install font-noto-sans
+brew cask install font-arimo
+brew cask install font-hind
 
 echo "Installing Quick Look Utilities..."
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
@@ -152,6 +216,25 @@ defaults write com.apple.dock workspaces-edge-delay -float 1.5
 
 echo "Sort contacts by first name"
 defaults write com.apple.AddressBook ABNameSortingFormat sortingFirstName
+
+###############################################################################
+# Editor & Terminal
+###############################################################################
+
+echo "Setting User Preferences folder"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.iterm2"
+
+echo "Don’t display the annoying prompt when quitting iTerm"
+defaults write com.googlecode.iterm2 PromptOnQuit -bool FALSE
+
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-python.python
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension zhuangtongfa.Material-theme
+code --install-extension ziyasal.vscode-open-in-github
 
 ###############################################################################
 # Kill affected applications
