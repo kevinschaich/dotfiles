@@ -249,4 +249,7 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   killall "${app}" > /dev/null 2>&1
 done
 
+open 'https://itunes.apple.com/us/app/spark-email-app-by-readdle/id1176895641'
+open 'https://itunes.apple.com/us/app/things-3/id904280696'
+
 echo "Done!"
