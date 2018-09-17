@@ -251,5 +251,6 @@ done
 
 open 'https://itunes.apple.com/us/app/spark-email-app-by-readdle/id1176895641'
 open 'https://itunes.apple.com/us/app/things-3/id904280696'
+open 'https://itunes.apple.com/us/app/magnet/id441258766'
 
 echo "Done!"
