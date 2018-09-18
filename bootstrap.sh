@@ -63,6 +63,7 @@ brew install python3
 brew install tree
 brew install node
 brew install yarn
+brew install tldr
 npm install --global pure-prompt
 
 echo "Installing Fonts..."

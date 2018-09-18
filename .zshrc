@@ -27,6 +27,8 @@ alias gd='git diff'
 alias l='ls -lahF'
 alias mkdir='mkdir -p'
 alias please='sudo $(fc -ln -1)'
+alias man='tldr'
+alias gsa='find . -maxdepth 2 -name .git -execdir git rev-parse --show-toplevel \; -execdir git status -s \;'
 
 # Functions
 function gpa(){
