@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>3F918604-7638-479B-8ED0-16D6774F93AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A4DB6A4B-39D6-42FE-A4D8-DB9996265BD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Paste Zoom Meeting</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>Meeting ID: 651 050 4346
+
+Kevin Schaich is inviting you to a Zoom meeting. 
+
+Join this Zoom meeting from your PC, Mac, Linux, iOS or Android: https://palantir.zoom.us/j/6510504346
+
+Or iPhone one-tap :
+    US: +16468769923,,6510504346#  or +16699006833,,6510504346# 
+Or Telephone：
+    Dial(for higher quality, dial a number based on your current location)：
+        US: +1 646 876 9923  or +1 669 900 6833  or +1 855 880 1246 (Toll Free) or +1 877 853 5257 (Toll Free)
+    Meeting ID: 651 050 4346
+    International numbers available: https://zoom.us/u/IusOw
+
+Or a SIP room system: 6510504346@zoomcrc.com
+
+Have trouble using the Zoom client?  Try the Web client: https://palantir.zoom.us/wc/6510504346/join</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A4DB6A4B-39D6-42FE-A4D8-DB9996265BD6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>zm</string>
+				<key>subtext</key>
+				<string>Paste an invite to join your personal Zoom meeting.</string>
+				<key>text</key>
+				<string>Paste Zoom Meeting</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3F918604-7638-479B-8ED0-16D6774F93AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>3F918604-7638-479B-8ED0-16D6774F93AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>780</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>A4DB6A4B-39D6-42FE-A4D8-DB9996265BD6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>930</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

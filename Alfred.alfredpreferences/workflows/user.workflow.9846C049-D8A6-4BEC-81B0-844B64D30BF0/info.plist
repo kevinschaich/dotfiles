@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>3F918604-7638-479B-8ED0-16D6774F93AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A4DB6A4B-39D6-42FE-A4D8-DB9996265BD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Paste External Zoom Meeting</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>For your convenience, here is a link to join the call. Please note that it uses Zoom; you may need to download and install Zoom for Windows if you haven't used Zoom before (or you can use the bottom link to join via your browser).
+
+Meeting ID: 651 050 4346
+
+Kevin Schaich is inviting you to a Zoom meeting. 
+
+Join this Zoom meeting from your PC, Mac, Linux, iOS or Android: https://palantir.zoom.us/j/6510504346
+
+Have trouble using the Zoom client?  Try the Web client: https://palantir.zoom.us/wc/6510504346/join</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A4DB6A4B-39D6-42FE-A4D8-DB9996265BD6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>zmext</string>
+				<key>subtext</key>
+				<string>Paste an invite to join your personal Zoom meeting (no call-in).</string>
+				<key>text</key>
+				<string>Paste External Zoom Meeting</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3F918604-7638-479B-8ED0-16D6774F93AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>3F918604-7638-479B-8ED0-16D6774F93AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>780</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>A4DB6A4B-39D6-42FE-A4D8-DB9996265BD6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>930</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
