@@ -2,7 +2,6 @@
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 prompt pure
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|?=** r:|?=**'
 
 source ~/.bash_profile
 source ~/.work-alias
@@ -18,17 +17,19 @@ export LANG=en_US.UTF-8
 export HISTFILE=~/.zsh_history
 
 # Aliases
-alias -g ...='../..'
 alias -g ....='../../..'
-alias ls='ls -G'
+alias -g ...='../..'
 alias c='code'
-alias gs='git status'
+alias cask='brew cask'
 alias gd='git diff'
+alias gs='git status'
+alias gsa='find . -maxdepth 2 -name .git -execdir git rev-parse --show-toplevel \; -execdir git status -s \;'
 alias l='ls -lahF'
+alias ls='ls -G'
+alias man='tldr'
 alias mkdir='mkdir -p'
 alias please='sudo $(fc -ln -1)'
-alias man='tldr'
-alias gsa='find . -maxdepth 2 -name .git -execdir git rev-parse --show-toplevel \; -execdir git status -s \;'
+alias rm='rm -r'
 
 # Functions
 function gpa(){
@@ -46,4 +47,7 @@ function show(){
     killall Finder
 }
 
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|?=** r:|?=**'
+
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

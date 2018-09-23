@@ -29,6 +29,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "Installing zsh utilities..."
 brew install git zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh-autosuggestions
 chsh -s /bin/zsh
 
 read -p "Work Laptop? Answer [y/n] " -n 1 -r
