@@ -16,15 +16,20 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "window.closeWhenEmpty": true,
+    "breadcrumbs.enabled": true,
+
+    // Code editing
+    "prettier.tabWidth": 4,
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
         "**/yarn.lock": true
     },
-    "prettier.tabWidth": 4,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "cSpell.userWords": [
         "palantir"
     ],
-    "breadcrumbs.enabled": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120"
+    ]
 }

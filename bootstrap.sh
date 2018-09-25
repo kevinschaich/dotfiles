@@ -13,15 +13,12 @@ ln -sfF ~/dotfiles/.inputrc ~
 ln -sfF ~/dotfiles/.vimrc ~
 ln -sfF ~/dotfiles/.zshrc ~
 ln -sfF ~/dotfiles/.iterm2.plist ~/.iterm2/com.googlecode.iterm2.plist
-ln -sfF ~/dotfiles/.code-settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sfF ~/dotfiles/.code-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sfF ~/dotfiles/.code-settings.jsonc ~/Library/Application\ Support/Code/User/settings.json
+ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/User/keybindings.json
 
 ############################################################################
 # Shell
 ############################################################################
-
-echo "Installing command line tools..."
-xcode-select --install
 
 echo "Installing Homebrew & Homebrew Cask..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -41,6 +38,11 @@ then
     git config --global user.email "schaich.kevin@gmail.com"
     git config --global user.name "kevinschaich"
 fi
+
+# Switch to SSH over HTTPS remote after git is installed
+git remote remove origin
+git remote add origin git@github.com:kevinschaich/dotfiles.git
+git branch --set-upstream-to=origin/master master
 
 ############################################################################
 # Homebrew
@@ -66,6 +68,7 @@ brew install tree
 brew install node
 brew install yarn
 brew install tldr
+brew install mas
 npm install --global pure-prompt
 
 echo "Installing Fonts..."
@@ -252,8 +255,18 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   killall "${app}" > /dev/null 2>&1
 done
 
-open 'https://itunes.apple.com/us/app/spark-email-app-by-readdle/id1176895641'
-open 'https://itunes.apple.com/us/app/things-3/id904280696'
-open 'https://itunes.apple.com/us/app/magnet/id441258766'
+###############################################################################
+# MAS-only Apps
+###############################################################################
+
+open '/Applications/App Store.app/'
+read -p "Logged into Mac App Store? Answer [y/n] " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+  mas install 1176895641 # Spark
+  mas install 904280696 # Things 3
+  mas install 441258766 # Magnet
+fi
 
 echo "Done!"
