@@ -4,6 +4,7 @@
 # Setup symlinks for .dotfiles
 ############################################################################
 
+cd ~
 echo "Setting up symlinks..."
 touch ~/.work-alias
 touch ~/.bash_profile
@@ -40,9 +41,11 @@ then
 fi
 
 # Switch to SSH over HTTPS remote after git is installed
+cd ~/dotfiles
 git remote remove origin
 git remote add origin git@github.com:kevinschaich/dotfiles.git
 git branch --set-upstream-to=origin/master master
+cd ~
 
 ############################################################################
 # Homebrew
