@@ -25,6 +25,7 @@ xcode-select --install
 
 echo "Installing Homebrew & Homebrew Cask..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew tap caskroom/versions
 
 echo "Installing zsh utilities..."
 brew install git zsh
