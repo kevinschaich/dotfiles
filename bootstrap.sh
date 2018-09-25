@@ -50,7 +50,7 @@ git branch --set-upstream-to=origin/master master
 
 echo "Installing apps..."
 brew cask install 1password
-brew cask install brave
+brew cask install brave-dev
 brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install iina
