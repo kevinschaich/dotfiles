@@ -3,7 +3,7 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
 
@@ -27,9 +27,21 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "cSpell.userWords": [
-        "palantir"
+        "dataset",
+        "palantir",
+        "pyspark",
+        "schaich",
+        "uncomment"
     ],
     "python.formatting.autopep8Args": [
         "--max-line-length=120"
-    ]
+    ],
+
+    // Misc.
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "python.pythonPath": "/usr/local/bin/python",
+    "explorer.confirmDelete": false
 }

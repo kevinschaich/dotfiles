@@ -31,7 +31,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-syntax
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh-autosuggestions
 chsh -s /bin/zsh
 
-read -p "Work Laptop? Answer [y/n] " -n 1 -r
+read -p "Work Laptop? Answer [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Nn]$ ]]
 then
@@ -41,6 +41,8 @@ then
 fi
 
 # Switch to SSH over HTTPS remote after git is installed
+echo "Switching ~/dotfiles to SSH remote. Add your SSH key to GitHub settings."
+open "https://github.com/settings/keys"
 cd ~/dotfiles
 git remote remove origin
 git remote add origin git@github.com:kevinschaich/dotfiles.git
@@ -229,13 +231,16 @@ done
 ###############################################################################
 
 open '/Applications/App Store.app/'
-read -p "Logged into Mac App Store? Answer [y/n] " -n 1 -r
+read -p "Logged into Mac App Store? Answer [y/n] " -r
 echo
-if [[ $REPLY =~ ^[Nn]$ ]]
+if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  mas install 1176895641 # Spark
-  mas install 904280696 # Things 3
-  mas install 441258766 # Magnet
+  # Spark
+  mas install 1176895641
+  # Things 3
+  mas install 904280696
+  # Magnet
+  mas install 441258766
 fi
 
 echo "Done!"

@@ -4,18 +4,14 @@
 <dict>
 	<key>fallbacks</key>
 	<array>
-		<string>features.websearch.google.fallback</string>
-		<string>features.websearch.amazon.fallback</string>
-		<string>features.websearch.wiki.fallback</string>
-		<string>features.websearch.custom.2BC95297-0FE4-4E90-885E-6EFCA28065A8.fallback</string>
-		<string>features.websearch.custom.7B4FC213-C48B-4AE9-81EA-F0283ABF1FDE.fallback</string>
+		<string>features.websearch.custom.523C8B61-02C2-4CC1-830B-10085782B4DF.fallback</string>
 		<string>features.websearch.custom.78215EEC-24F9-4C0B-856B-6879ECF9392C.fallback</string>
 		<string>features.websearch.custom.B32DCF61-2E42-4189-8D41-FF13B2FF8481.fallback</string>
 		<string>features.websearch.custom.2ABDE768-0D3E-4652-89DA-2D8B984C7F8A.fallback</string>
 	</array>
-	<key>fallbacksMode</key>
-	<integer>1</integer>
 	<key>showAppleScripts</key>
+	<true/>
+	<key>showArchives</key>
 	<true/>
 	<key>showDocuments</key>
 	<true/>
