@@ -15,11 +15,11 @@
     "editor.scrollBeyondLastLine": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}",
-    "window.closeWhenEmpty": true,
+    "window.closeWhenEmpty": false,
     "breadcrumbs.enabled": true,
 
     // Code editing
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 2,
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -43,5 +43,7 @@
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
     "python.pythonPath": "/usr/local/bin/python",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "prettier.printWidth": 120,
+    "prettier.eslintIntegration": true
 }
