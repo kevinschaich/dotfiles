@@ -9,7 +9,6 @@
 
     // Operation more similar to Sublime
     "editor.formatOnPaste": true,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "workbench.startupEditor": "newUntitledFile",
     "editor.scrollBeyondLastLine": false,
@@ -19,7 +18,7 @@
     "breadcrumbs.enabled": true,
 
     // Code editing
-    "prettier.tabWidth": 2,
+    "prettier.tabWidth": 4,
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -45,5 +44,6 @@
     "python.pythonPath": "/usr/local/bin/python",
     "explorer.confirmDelete": false,
     "prettier.printWidth": 120,
-    "prettier.eslintIntegration": true
+    "prettier.eslintIntegration": true,
+    "markdown.extension.toc.levels": "2..6"
 }
