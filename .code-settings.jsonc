@@ -3,7 +3,7 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 3,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
 
@@ -45,5 +45,11 @@
     "explorer.confirmDelete": false,
     "prettier.printWidth": 120,
     "prettier.eslintIntegration": true,
-    "markdown.extension.toc.levels": "2..6"
+    "markdown.extension.toc.levels": "2..6",
+    "editor.renderWhitespace": "none",
+    "explorer.confirmDragAndDrop": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    }
 }
