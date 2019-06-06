@@ -31,14 +31,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-syntax
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh-autosuggestions
 chsh -s /bin/zsh
 
-read -p "Work Laptop? Answer [y/n] " -r
-echo
-if [[ $REPLY =~ ^[Nn]$ ]]
-then
-    git config --global credential.helper osxkeychain
-    git config --global user.email "schaich.kevin@gmail.com"
-    git config --global user.name "kevinschaich"
-fi
+git config --global credential.helper osxkeychain
+git config --global user.email "schaich.kevin@gmail.com"
+git config --global user.name "kevinschaich"
 
 # Switch to SSH over HTTPS remote after git is installed
 echo "Switching ~/dotfiles to SSH remote. Add your SSH key to GitHub settings."
@@ -54,8 +49,9 @@ cd ~
 ############################################################################
 
 echo "Installing apps..."
+brew tap homebrew/cask-drivers
 brew cask install 1password
-brew cask install brave-dev
+brew cask install chrome
 brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install iina
@@ -65,6 +61,9 @@ brew cask install kap
 brew cask install alfred
 brew cask install slack
 brew cask install quip
+brew cask install sketch
+brew cask install sonos
+brew cask install postman
 
 echo "Installing terminal utilities..."
 brew install wget
@@ -76,7 +75,6 @@ brew install node
 brew install yarn
 brew install tldr
 brew install mas
-brew install nativefier
 brew install ag
 npm install --global pure-prompt
 
@@ -166,18 +164,18 @@ echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-r
 defaults write com.apple.dock tilesize -int 50
 
 echo "Speeding up Mission Control animations and grouping windows by application"
-defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock expose-animation-duration -float 0.2
 
 echo "Finder: disable window animations and Get Info animations"
 defaults write com.apple.finder DisableAllAnimations -bool true
 
 echo "Set Dock to auto-hide and remove the auto-hiding delay"
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0
-defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.2
+defaults write com.apple.dock autohide-delay -float 0.05
 
 echo "Disable window animations"
-defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool true
 
 echo "Disable dashboard"
 defaults write com.apple.dashboard mcx-disabled -boolean YES
@@ -188,8 +186,9 @@ defaults write com.apple.dock minimize-to-application -bool true
 echo "Don’t animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
 
-echo "Add delay for dragging windows to new spaces"
-defaults write com.apple.dock workspaces-edge-delay -float 1.5
+# Doesn't work > Mojave
+# echo "Add delay for dragging windows to new spaces"
+# defaults write com.apple.dock workspaces-edge-delay -float 1.5
 
 echo "Sort contacts by first name"
 defaults write com.apple.AddressBook ABNameSortingFormat sortingFirstName

@@ -3,9 +3,15 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
+    "prettier.printWidth": 120,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "editor.renderWhitespace": "none",
+    "explorer.confirmDragAndDrop": false,
+    "editor.gotoLocation.multiple": "goto",
 
     // Operation more similar to Sublime
     "editor.formatOnPaste": true,
@@ -24,6 +30,8 @@
         "**/bower_components": true,
         "**/yarn.lock": true
     },
+
+    // Linting customizations
     "typescript.updateImportsOnFileMove.enabled": "always",
     "cSpell.userWords": [
         "dataset",
@@ -35,22 +43,16 @@
     "python.formatting.autopep8Args": [
         "--max-line-length=120"
     ],
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "prettier.eslintIntegration": true,
+    "markdown.extension.toc.levels": "2..6",
 
     // Misc.
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "markdown.preview.scrollPreviewWithEditor": false,
-    "markdown.preview.scrollEditorWithPreview": false,
     "python.pythonPath": "/usr/local/bin/python",
     "explorer.confirmDelete": false,
-    "prettier.printWidth": 120,
-    "prettier.eslintIntegration": true,
-    "markdown.extension.toc.levels": "2..6",
-    "editor.renderWhitespace": "none",
-    "explorer.confirmDragAndDrop": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "editor.gotoLocation.multiple": "goto"
 }
