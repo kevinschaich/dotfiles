@@ -3,7 +3,7 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 3,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
 
@@ -51,5 +51,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    }
+    },
+    "editor.gotoLocation.multiple": "goto"
 }
