@@ -51,7 +51,7 @@ cd ~
 echo "Installing apps..."
 brew tap homebrew/cask-drivers
 brew cask install 1password
-brew cask install chrome
+brew cask install google-chrome
 brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install iina
@@ -64,6 +64,7 @@ brew cask install quip
 brew cask install sketch
 brew cask install sonos
 brew cask install postman
+brew cask install geekbench
 
 echo "Installing terminal utilities..."
 brew install wget
@@ -240,6 +241,10 @@ then
   mas install 904280696
   # Magnet
   mas install 441258766
+  # Blackmagic Disk Speed Test
+  mas install 425264550
+  # Ookla Speedtest
+  mas install 1153157709
 fi
 
 echo "Done!"
