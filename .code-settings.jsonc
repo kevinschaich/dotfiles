@@ -3,7 +3,7 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 2,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
     "prettier.printWidth": 120,
@@ -47,7 +47,7 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "prettier.eslintIntegration": true,
-    "markdown.extension.toc.levels": "2..6",
+    "markdown.extension.toc.levels": "2..3",
 
     // Misc.
     "telemetry.enableCrashReporter": false,
