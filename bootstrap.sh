@@ -195,6 +195,9 @@ echo "Setting User Preferences folder"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.iterm2"
 
+defaults write com.runningwithcrayons.Alfred-Preferences syncfolder ~/dotfiles
+defaults write com.runningwithcrayons.Alfred-Preferences-3 syncfolder ~/dotfiles
+
 echo "Don’t display the annoying prompt when quitting iTerm"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool FALSE
 
