@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>0417FDF1-B534-4890-BEF2-431B01CA10EF</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>text</key>
+			<string>Search GitHub for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/search?q={query}&amp;amp;ref=opensearch</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>11C874DD-D7F2-4F7F-BC55-6352A9AC639E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wiki</string>
+			<key>text</key>
+			<string>Search Wiki for '{query}'</string>
+			<key>url</key>
+			<string>https://wiki.yojoe.local/dosearchsite.action?queryString={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>4008B5F4-D9BA-408C-B885-3F85ABEC5BB2</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>what</string>
+			<key>text</key>
+			<string>Search what.yojoe.local for '{query}'</string>
+			<key>url</key>
+			<string>https://what.yojoe.local/terms/search?term={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>7C3EC738-F92D-462D-BE76-A0FC3FB073DC</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ghe</string>
+			<key>text</key>
+			<string>Search github.palantir.build for '{query}'</string>
+			<key>url</key>
+			<string>https://github.palantir.build/search?q='{query}'</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>ADA3BF5A-B349-42E3-9900-015F79B3F52C</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ppl</string>
+			<key>text</key>
+			<string>Search people.yojoe.local for '{query}'</string>
+			<key>url</key>
+			<string>https://people.yojoe.local/search?term={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>C8E53A72-260B-4AC3-ABD8-35E54F51B23B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>things</string>
+			<key>text</key>
+			<string>Add '{query}' to Things 3</string>
+			<key>url</key>
+			<string>things:///add?title={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>CF10402F-C280-4F8C-BD20-C5E3D7E25FF9</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>yelp</string>
+			<key>text</key>
+			<string>Search Yelp for '{query}'</string>
+			<key>url</key>
+			<string>https://www.yelp.com/search?find_desc={query}&amp;amp;src=opensearch</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F6621BAB-5FE4-4B5E-930F-5949C455287E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>yj</string>
+			<key>text</key>
+			<string>Search search.palantir.tech for '{query}'</string>
+			<key>url</key>
+			<string>https://search.palantir.tech/search?term={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>
