@@ -35,15 +35,6 @@ git config --global credential.helper osxkeychain
 git config --global user.email "schaich.kevin@gmail.com"
 git config --global user.name "kevinschaich"
 
-# Switch to SSH over HTTPS remote after git is installed
-echo "Switching ~/dotfiles to SSH remote. Add your SSH key to GitHub settings."
-open "https://github.com/settings/keys"
-cd ~/dotfiles
-git remote remove origin
-git remote add origin git@github.com:kevinschaich/dotfiles.git
-git branch --set-upstream-to=origin/master master
-cd ~
-
 ############################################################################
 # Homebrew
 ############################################################################
@@ -77,7 +68,9 @@ brew install yarn
 brew install tldr
 brew install mas
 brew install ag
+npm config set strict-ssl false -g
 npm install --global pure-prompt
+npm config set strict-ssl true -g
 
 echo "Installing Fonts..."
 brew tap caskroom/fonts
@@ -205,13 +198,12 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.iterm2"
 echo "Don’t display the annoying prompt when quitting iTerm"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool FALSE
 
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension eriklynd.json-tools
 code --install-extension esbenp.prettier-vscode
 code --install-extension ms-python.python
 code --install-extension ms-vscode.sublime-keybindings
-code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension zhuangtongfa.Material-theme
-code --install-extension ziyasal.vscode-open-in-github
 
 ###############################################################################
 # Kill affected applications
