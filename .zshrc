@@ -6,6 +6,8 @@ prompt pure
 source ~/.bash_profile
 source ~/.work-alias
 
+export PATH="/usr/local/sbin:$PATH"
+
 # Defaults
 export HISTSIZE=5000
 export SAVEHIST=5000

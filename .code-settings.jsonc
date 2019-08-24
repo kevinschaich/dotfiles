@@ -26,10 +26,25 @@
     // Code editing
     "prettier.tabWidth": 4,
     "search.exclude": {
-        "**/node_modules": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
         "**/bower_components": true,
+        "**/jspm_packages": true,
+        "**/node_modules": true,
         "**/yarn.lock": true
     },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/bower_components": true,
+        "**/jspm_packages": true,
+        "**/node_modules": true,
+        "**/yarn.lock": true
+    }
 
     // Linting customizations
     "typescript.updateImportsOnFileMove.enabled": "always",
