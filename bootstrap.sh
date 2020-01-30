@@ -187,7 +187,7 @@ defaults write com.runningwithcrayons.Alfred-Preferences-3 syncfolder ~/dotfiles
 echo "Don’t display the annoying prompt when quitting iTerm"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool FALSE
 
-code --install-extension Equinusocio.vsc-material-theme
+code --install-extension zhuangtongfa.material-theme
 code --install-extension eriklynd.json-tools
 code --install-extension esbenp.prettier-vscode
 code --install-extension ms-python.python
