@@ -42,56 +42,42 @@ git config --global user.name "kevinschaich"
 echo "Installing apps..."
 brew tap homebrew/cask-drivers
 brew cask install 1password
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install iina
-brew cask install spotify
-brew cask install caprine
-brew cask install kap
 brew cask install alfred
-brew cask install slack
+brew cask install caprine
+brew cask install cyberduck
+brew cask install fanny
+brew cask install geekbench
+brew cask install google-chrome
+brew cask install google-drive-file-stream
+brew cask install iina
+brew cask install iterm2
+brew cask install kap
+brew cask install keepingyouawake
+brew cask install postman
+brew cask install private-internet-access
 brew cask install quip
 brew cask install sketch
+brew cask install slack
 brew cask install sonos
-brew cask install postman
-brew cask install geekbench
+brew cask install spotify
+brew cask install steam
+brew cask install transmission
+brew cask install visual-studio-code
 
 echo "Installing terminal utilities..."
-brew install wget
-brew install unrar
+brew install ag
+brew install mas
+brew install node
 brew install python
 brew install python3
-brew install tree
-brew install node
-brew install yarn
 brew install tldr
-brew install mas
-brew install ag
+brew install tree
+brew install unrar
+brew install wget
+brew install yarn
 npm config set strict-ssl false -g
 npm install --global pure-prompt
 npm config set strict-ssl true -g
-
-echo "Installing Fonts..."
-brew tap caskroom/fonts
-brew cask install font-hack
-brew cask install font-bebas-neue
-brew cask install font-cardo
-brew cask install font-charter
-brew cask install font-code
-brew cask install font-crimson-text
-brew cask install font-fira-code
-brew cask install font-inconsolata
-brew cask install font-lato
-brew cask install font-open-sans
-brew cask install font-open-sans-condensed
-brew cask install font-roboto
-brew cask install font-roboto-condensed
-brew cask install font-roboto-mono
-brew cask install font-roboto-slab
-brew cask install font-source-code-pro
-brew cask install font-source-sans-pro
-brew cask install font-source-serif-pro
 
 echo "Installing Quick Look Utilities..."
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
