@@ -211,13 +211,10 @@ done
 # MAS-only Apps
 ###############################################################################
 
-open '/Applications/App Store.app/'
 read -p "Logged into Mac App Store? Answer [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  # Spark
-  mas install 1176895641
   # Things 3
   mas install 904280696
   # Magnet
