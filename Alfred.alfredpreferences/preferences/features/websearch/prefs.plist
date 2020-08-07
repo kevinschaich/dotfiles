@@ -43,19 +43,6 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
-		<key>7C3EC738-F92D-462D-BE76-A0FC3FB073DC</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>ghe</string>
-			<key>text</key>
-			<string>Search github.palantir.build for '{query}'</string>
-			<key>url</key>
-			<string>https://github.palantir.build/search?q='{query}'</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
 		<key>ADA3BF5A-B349-42E3-9900-015F79B3F52C</key>
 		<dict>
 			<key>enabled</key>
@@ -92,19 +79,6 @@
 			<string>Search Yelp for '{query}'</string>
 			<key>url</key>
 			<string>https://www.yelp.com/search?find_desc={query}&amp;amp;src=opensearch</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
-		<key>F6621BAB-5FE4-4B5E-930F-5949C455287E</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>yj</string>
-			<key>text</key>
-			<string>Search search.palantir.tech for '{query}'</string>
-			<key>url</key>
-			<string>https://search.palantir.tech/search?term={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
