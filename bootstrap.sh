@@ -31,9 +31,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-syntax
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh-autosuggestions
 chsh -s /bin/zsh
 
-git config --global credential.helper osxkeychain
-git config --global user.email "schaich.kevin@gmail.com"
-git config --global user.name "kevinschaich"
+read -p "Personal Computer? Answer [y/n] " -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  git config --global credential.helper osxkeychain
+  git config --global user.email "schaich.kevin@gmail.com"
+  git config --global user.name "kevinschaich"
+fi
 
 ############################################################################
 # Homebrew
@@ -41,11 +46,14 @@ git config --global user.name "kevinschaich"
 
 echo "Installing apps..."
 brew tap homebrew/cask-drivers
+
 brew cask install 1password
+brew cask install adobe-creative-cloud
+brew cask install adobe-dng-converter
 brew cask install alfred
+brew cask install bitbar
 brew cask install caprine
 brew cask install cyberduck
-brew cask install fanny
 brew cask install geekbench
 brew cask install google-chrome
 brew cask install google-drive-file-stream
@@ -53,16 +61,22 @@ brew cask install iina
 brew cask install iterm2
 brew cask install kap
 brew cask install keepingyouawake
+brew cask install microsoft-teams
 brew cask install postman
 brew cask install private-internet-access
+brew cask install proxyman
 brew cask install quip
+brew cask install screens
+brew cask install screens-connect
 brew cask install sketch
 brew cask install slack
 brew cask install sonos
 brew cask install spotify
 brew cask install steam
+brew cask install timestamp
 brew cask install transmission
 brew cask install visual-studio-code
+brew cask install webex-meetings
 
 echo "Installing terminal utilities..."
 brew install ag
@@ -75,12 +89,15 @@ brew install tree
 brew install unrar
 brew install wget
 brew install yarn
+
 npm config set strict-ssl false -g
 npm install --global pure-prompt
 npm config set strict-ssl true -g
+npm install --global mintable
 
 echo "Installing Quick Look Utilities..."
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
+# glance on mac app store?
+brew cask install betterzip qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv qlimagesize qlvideo
 
 ################################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
@@ -223,6 +240,10 @@ then
   mas install 425264550
   # Ookla Speedtest
   mas install 1153157709
+  # Streaks
+  mas install 1493327990
+  # The Unarchiver
+  mas install 425424353
 fi
 
 echo "Done!"
