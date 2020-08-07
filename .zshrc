@@ -9,8 +9,8 @@ source ~/.work-alias
 export PATH="/usr/local/sbin:$PATH"
 
 # Defaults
-export HISTSIZE=5000
-export SAVEHIST=5000
+export HISTSIZE=10000
+export SAVEHIST=10000
 export BROWSER=open
 export EDITOR=code
 export VISUAL=code
@@ -28,7 +28,6 @@ alias gs='git status'
 alias gsa='find . -maxdepth 2 -name .git -execdir git rev-parse --show-toplevel \; -execdir git status -s \;'
 alias l='ls -lahF'
 alias ls='ls -G'
-alias man='tldr'
 alias mkdir='mkdir -p'
 alias please='sudo $(fc -ln -1)'
 alias rm='rm -r'

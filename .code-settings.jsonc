@@ -44,7 +44,7 @@
         "**/jspm_packages": true,
         "**/node_modules": true,
         "**/yarn.lock": true
-    }
+    },
 
     // Linting customizations
     "typescript.updateImportsOnFileMove.enabled": "always",

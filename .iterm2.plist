@@ -752,20 +752,6 @@ Password Manager</string>
 					<key>Text</key>
 					<string>9</string>
 				</dict>
-				<key>0x52-0x120000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string>sudo wget -O /usr/local/bin/code https://raw.github.com/aurora/rmate/master/rmate &amp;&amp; sudo chmod a+x /usr/local/bin/code</string>
-				</dict>
-				<key>0x73-0x100000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string>sudo -iu palantir\ncd /opt/palantir/services\n</string>
-				</dict>
 				<key>0x7f-0x100000</key>
 				<dict>
 					<key>Action</key>
@@ -1687,20 +1673,6 @@ Password Manager</string>
 					<integer>12</integer>
 					<key>Text</key>
 					<string>9</string>
-				</dict>
-				<key>0x52-0x120000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string>sudo wget -O /usr/local/bin/code https://raw.github.com/aurora/rmate/master/rmate &amp;&amp; sudo chmod a+x /usr/local/bin/code</string>
-				</dict>
-				<key>0x73-0x100000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string>sudo -iu palantir\ncd /opt/palantir/services\n</string>
 				</dict>
 				<key>0x7f-0x100000</key>
 				<dict>
