@@ -244,6 +244,8 @@ then
   mas install 1493327990
   # The Unarchiver
   mas install 425424353
+  # Amphetamine
+  mas install 937984704
 fi
 
 echo "Done!"
