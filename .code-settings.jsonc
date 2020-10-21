@@ -3,7 +3,7 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
     "prettier.printWidth": 120,
@@ -61,13 +61,19 @@
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
     "markdown.extension.toc.levels": "2..3",
 
     // Misc.
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "python.pythonPath": "/usr/local/bin/python",
+    "python.pythonPath": "/usr/local/opt/python@3.8/bin/python3.8",
     "explorer.confirmDelete": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "http.proxyStrictSSL": false,
+    "python.formatting.provider": "black",
+    "python.showStartPage": false,
 }

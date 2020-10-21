@@ -22,7 +22,7 @@ ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/U
 ############################################################################
 
 echo "Installing Homebrew & Homebrew Cask..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew tap caskroom/versions
 
 echo "Installing zsh utilities..."
