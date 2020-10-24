@@ -16,16 +16,12 @@ Shell, terminal emulator, editor, and OSX setup.
 ```bash
 xcode-select --install # Only required if you haven't used Git before
 cd ~
-git clone git@github.com:kevinschaich/dotfiles.git 
+git clone https://github.com/kevinschaich/dotfiles
 chmod u+x ~/dotfiles/bootstrap.sh 
 ~/dotfiles/bootstrap.sh
 ```
 
-As one command:
-
-```bash
-xcode-select --install && cd && git clone git@github.com:kevinschaich/dotfiles.git && chmod u+x ~/dotfiles/bootstrap.sh && ~/dotfiles/bootstrap.sh
-```
+> **Note:** If the `xcode-select --install` step fails, you may need to [download Xcode from the Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
 
 ## License
 

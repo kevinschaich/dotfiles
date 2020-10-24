@@ -95,6 +95,10 @@ npm install --global pure-prompt
 npm config set strict-ssl true -g
 npm install --global mintable
 
+mkdir ~/bitbar
+wget https://raw.githubusercontent.com/matryer/bitbar-plugins/39e8f252ed69d0dd46bbe095299e52279e86d737/Finance/mintable.1h.zsh --output-document ~/bitbar/mintable.1h.zsh
+chmod u+x ~/bitbar/mintable.1h.zsh
+
 echo "Installing Quick Look Utilities..."
 # glance on mac app store?
 brew cask install betterzip qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv qlimagesize qlvideo
