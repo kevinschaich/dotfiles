@@ -3,7 +3,6 @@
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro",
     "editor.rulers": [120],
     "prettier.printWidth": 120,
@@ -50,9 +49,11 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "cSpell.userWords": [
         "dataset",
+        "dedupe",
         "palantir",
         "pyspark",
         "schaich",
+        "sjoin",
         "uncomment"
     ],
     "python.formatting.autopep8Args": [
@@ -70,10 +71,24 @@
     // Misc.
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "python.pythonPath": "/usr/local/opt/python@3.8/bin/python3.8",
+    "python.pythonPath": "/usr/local/bin/python3.9",
     "explorer.confirmDelete": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.json-language-features",
     "http.proxyStrictSSL": false,
     "python.formatting.provider": "black",
     "python.showStartPage": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "prettier.bracketSpacing": false,
+    "window.zoomLevel": 2,
 }

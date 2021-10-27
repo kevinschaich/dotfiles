@@ -7,6 +7,7 @@ source ~/.bash_profile
 source ~/.work-alias
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/anaconda3/bin:$PATH"
 
 # Defaults
 export HISTSIZE=10000
