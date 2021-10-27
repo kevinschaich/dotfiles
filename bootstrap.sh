@@ -48,7 +48,6 @@ echo "Installing apps..."
 
 # brew install adobe-creative-cloud
 # brew install adobe-dng-converter
-brew install 1password
 brew install ableton-live-standard
 brew install bitbar
 brew install cyberduck
