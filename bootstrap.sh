@@ -45,41 +45,42 @@ fi
 ############################################################################
 
 echo "Installing apps..."
-brew tap homebrew/cask-drivers
 
-brew cask install 1password
-brew cask install adobe-creative-cloud
-brew cask install adobe-dng-converter
-brew cask install alfred
-brew cask install bitbar
-brew cask install caprine
-brew cask install cyberduck
-brew cask install geekbench
-brew cask install google-chrome
-brew cask install google-drive-file-stream
-brew cask install iina
-brew cask install iterm2
-brew cask install kap
-brew cask install keepingyouawake
-brew cask install microsoft-teams
-brew cask install postman
-brew cask install private-internet-access
-brew cask install proxyman
-brew cask install quip
-brew cask install screens
-brew cask install screens-connect
-brew cask install sketch
-brew cask install slack
-brew cask install sonos
-brew cask install spotify
-brew cask install steam
-brew cask install timestamp
-brew cask install transmission
-brew cask install visual-studio-code
-brew cask install webex-meetings
+# brew install adobe-creative-cloud
+# brew install adobe-dng-converter
+brew install 1password
+brew install ableton-live-standard
+brew install bitbar
+brew install cyberduck
+brew install geekbench
+brew install google-chrome
+brew install google-drive-file-stream
+brew install iterm2
+brew install kap
+brew install keepingyouawake
+brew install messenger
+brew install native-access
+brew install postman
+brew install private-internet-access
+brew install proxyman
+brew install quip
+brew install rocket
+brew install screens
+brew install screens-connect
+brew install sketch
+brew install slack
+brew install sonos
+brew install spitfire-audio
+brew install spotify
+brew install steam
+brew install timestamp
+brew install transmission
+brew install visual-studio-code
 
 echo "Installing terminal utilities..."
+
 brew install ag
+brew install anaconda
 brew install mas
 brew install node
 brew install python
@@ -101,7 +102,7 @@ chmod u+x ~/bitbar/mintable.1h.zsh
 
 echo "Installing Quick Look Utilities..."
 # glance on mac app store?
-brew cask install betterzip qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv qlimagesize qlvideo
+# brew install betterzip qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv qlimagesize qlvideo
 
 ################################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
@@ -112,22 +113,22 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 15
 
-echo "Setting trackpad & mouse speed"
-defaults write -g com.apple.trackpad.scaling 0.875
-defaults write -g com.apple.mouse.scaling 0.875
+# echo "Setting trackpad & mouse speed"
+# defaults write -g com.apple.trackpad.scaling 0.875
+# defaults write -g com.apple.mouse.scaling 0.875
 
-echo "Disable display from automatically adjusting brightness"
-sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
+# echo "Disable display from automatically adjusting brightness"
+# sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 
 ###############################################################################
 # Screen
 ###############################################################################
 
-echo "Disabling subpixel font rendering on non-Apple LCDs"
-defaults write -g AppleFontSmoothing -int 0
+# echo "Disabling subpixel font rendering on non-Apple LCDs"
+# defaults write -g AppleFontSmoothing -int 0
 
-echo "Disabling subpixel font/image smoothing in Preview"
-defaults write com.apple.Preview PVPDFAntiAliasOption 0
+# echo "Disabling subpixel font/image smoothing in Preview"
+# defaults write com.apple.Preview PVPDFAntiAliasOption 0
 
 ###############################################################################
 # Finder
@@ -161,38 +162,38 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 # Dock & Mission Control
 ###############################################################################
 
-echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
-defaults write com.apple.dock tilesize -int 50
+# echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
+# defaults write com.apple.dock tilesize -int 50
 
-echo "Speeding up Mission Control animations and grouping windows by application"
-defaults write com.apple.dock expose-animation-duration -float 0.2
+# echo "Speeding up Mission Control animations and grouping windows by application"
+# defaults write com.apple.dock expose-animation-duration -float 0.2
 
-echo "Finder: disable window animations and Get Info animations"
-defaults write com.apple.finder DisableAllAnimations -bool true
+# echo "Finder: disable window animations and Get Info animations"
+# defaults write com.apple.finder DisableAllAnimations -bool true
 
-echo "Set Dock to auto-hide and remove the auto-hiding delay"
-defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-time-modifier -float 0.2
-defaults write com.apple.dock autohide-delay -float 0.05
+# echo "Set Dock to auto-hide and remove the auto-hiding delay"
+# defaults write com.apple.dock autohide -bool true
+# defaults write com.apple.dock autohide-time-modifier -float 0.2
+# defaults write com.apple.dock autohide-delay -float 0.05
 
-echo "Disable window animations"
-defaults write -g NSAutomaticWindowAnimationsEnabled -bool true
+# echo "Disable window animations"
+# defaults write -g NSAutomaticWindowAnimationsEnabled -bool true
 
-echo "Disable dashboard"
-defaults write com.apple.dashboard mcx-disabled -boolean YES
+# echo "Disable dashboard"
+# defaults write com.apple.dashboard mcx-disabled -boolean YES
 
-echo "Minimize windows into their application’s icon"
-defaults write com.apple.dock minimize-to-application -bool true
+# echo "Minimize windows into their application’s icon"
+# defaults write com.apple.dock minimize-to-application -bool true
 
-echo "Don’t animate opening applications from the Dock"
-defaults write com.apple.dock launchanim -bool false
+# echo "Don’t animate opening applications from the Dock"
+# defaults write com.apple.dock launchanim -bool false
 
 # Doesn't work > Mojave
 # echo "Add delay for dragging windows to new spaces"
 # defaults write com.apple.dock workspaces-edge-delay -float 1.5
 
-echo "Sort contacts by first name"
-defaults write com.apple.AddressBook ABNameSortingFormat sortingFirstName
+# echo "Sort contacts by first name"
+# defaults write com.apple.AddressBook ABNameSortingFormat sortingFirstName
 
 ###############################################################################
 # Editor & Terminal
