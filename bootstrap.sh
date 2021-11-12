@@ -48,7 +48,7 @@ echo "Installing apps..."
 
 # brew install adobe-creative-cloud
 # brew install adobe-dng-converter
-brew install ableton-live-standard
+# brew install ableton-live-standard
 brew install bitbar
 brew install cyberduck
 brew install geekbench
@@ -90,8 +90,9 @@ brew install unrar
 brew install wget
 brew install yarn
 
-npm config set strict-ssl false -g
-npm install --global pure-prompt
+mkdir -p "$HOME/.zsh"\n
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"\n
+
 npm config set strict-ssl true -g
 npm install --global mintable
 

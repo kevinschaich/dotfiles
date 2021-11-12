@@ -1,6 +1,9 @@
 # .zshrc
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
+
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
 prompt pure
 
 source ~/.bash_profile
