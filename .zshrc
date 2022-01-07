@@ -35,6 +35,8 @@ alias ls='ls -G'
 alias mkdir='mkdir -p'
 alias please='sudo $(fc -ln -1)'
 alias rm='rm -r'
+alias python='python3'
+alias pip='pip3'
 
 # Functions
 function gpa(){
