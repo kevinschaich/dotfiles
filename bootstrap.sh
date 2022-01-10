@@ -48,7 +48,12 @@ echo "Installing apps..."
 
 # brew install adobe-creative-cloud
 # brew install adobe-dng-converter
-# brew install ableton-live-standard
+# brew install screens
+# brew install screens-connect
+# brew install sketch
+# brew install slack
+# brew install timestamp
+brew install ableton-live-suite
 brew install bitbar
 brew install cyberduck
 brew install geekbench
@@ -56,7 +61,6 @@ brew install google-chrome
 brew install google-drive-file-stream
 brew install iterm2
 brew install kap
-brew install keepingyouawake
 brew install messenger
 brew install native-access
 brew install postman
@@ -64,22 +68,17 @@ brew install private-internet-access
 brew install proxyman
 brew install quip
 brew install rocket
-brew install screens
-brew install screens-connect
-brew install sketch
-brew install slack
 brew install sonos
 brew install spitfire-audio
 brew install spotify
 brew install steam
-brew install timestamp
 brew install transmission
 brew install visual-studio-code
 
 echo "Installing terminal utilities..."
 
+# brew install anaconda
 brew install ag
-brew install anaconda
 brew install mas
 brew install node
 brew install python
