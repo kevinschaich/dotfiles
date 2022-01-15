@@ -13,6 +13,7 @@ mkdir -p ~/Library/Application\ Support/Code/User
 ln -sfF ~/dotfiles/.inputrc ~
 ln -sfF ~/dotfiles/.vimrc ~
 ln -sfF ~/dotfiles/.zshrc ~
+ln -sfF ~/dotfiles/.zprofile ~
 ln -sfF ~/dotfiles/.iterm2.plist ~/.iterm2/com.googlecode.iterm2.plist
 ln -sfF ~/dotfiles/.code-settings.jsonc ~/Library/Application\ Support/Code/User/settings.json
 ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/User/keybindings.json
@@ -22,8 +23,9 @@ ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/U
 ############################################################################
 
 echo "Installing Homebrew & Homebrew Cask..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap caskroom/versions
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing zsh utilities..."
 brew install git zsh
@@ -46,19 +48,21 @@ fi
 
 echo "Installing apps..."
 
+# brew install ableton-live-suite
 # brew install adobe-creative-cloud
 # brew install adobe-dng-converter
 # brew install screens
 # brew install screens-connect
 # brew install sketch
 # brew install slack
+# brew install spitfire-audio
 # brew install timestamp
-brew install ableton-live-suite
+
 brew install bitbar
 brew install cyberduck
 brew install geekbench
 brew install google-chrome
-brew install google-drive-file-stream
+brew install google-drive
 brew install iterm2
 brew install kap
 brew install messenger
@@ -69,7 +73,6 @@ brew install proxyman
 brew install quip
 brew install rocket
 brew install sonos
-brew install spitfire-audio
 brew install spotify
 brew install steam
 brew install transmission
@@ -89,8 +92,8 @@ brew install unrar
 brew install wget
 brew install yarn
 
-mkdir -p "$HOME/.zsh"\n
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"\n
+mkdir -p "$HOME/.zsh"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
 npm config set strict-ssl true -g
 npm install --global mintable
