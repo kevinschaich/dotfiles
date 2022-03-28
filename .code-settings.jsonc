@@ -15,7 +15,6 @@
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "top",
     "workbench.startupEditor": "newUntitledFile",
-    "editor.scrollBeyondLastLine": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "window.closeWhenEmpty": false,
@@ -58,6 +57,7 @@
         "pyproj",
         "pyspark",
         "schaich",
+        "sidechain",
         "sjoin",
         "uncomment"
     ],
