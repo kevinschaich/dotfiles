@@ -8,7 +8,6 @@
     "prettier.printWidth": 120,
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
-    "editor.renderWhitespace": "none",
     "explorer.confirmDragAndDrop": false,
     "editor.gotoLocation.multiple": "goto",
 
@@ -42,7 +41,11 @@
         "**/bower_components": true,
         "**/jspm_packages": true,
         "**/node_modules": true,
-        "**/yarn.lock": true
+        "**/yarn.lock": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
 
     // Linting customizations
@@ -50,7 +53,9 @@
     "cSpell.userWords": [
         "dataset",
         "dedupe",
+        "geospatial",
         "palantir",
+        "pyproj",
         "pyspark",
         "schaich",
         "sjoin",
@@ -90,5 +95,10 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "prettier.bracketSpacing": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.zoomLevel": 2,
+    "python.formatting.blackArgs": [
+        "-l 120"
+    ],
 }
