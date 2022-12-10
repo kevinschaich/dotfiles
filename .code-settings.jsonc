@@ -78,7 +78,9 @@
     "python.formatting.provider": "black",
     "python.showStartPage": false,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.plist": "default",
+        "*.sqlite": "sqlite-viewer.view"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"

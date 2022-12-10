@@ -1,7 +1,4 @@
 # .zshrc
-fpath+=$HOME/.zsh/pure
-autoload -U promptinit; promptinit
-prompt pure
 
 source ~/.bash_profile
 source ~/.work-alias
@@ -55,3 +52,5 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 
 source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(starship init zsh)"

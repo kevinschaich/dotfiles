@@ -8,13 +8,11 @@ cd ~
 echo "Setting up symlinks..."
 touch ~/.work-alias
 touch ~/.bash_profile
-mkdir -p ~/.iterm2
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -sfF ~/dotfiles/.inputrc ~
 ln -sfF ~/dotfiles/.vimrc ~
 ln -sfF ~/dotfiles/.zshrc ~
 ln -sfF ~/dotfiles/.zprofile ~
-ln -sfF ~/dotfiles/.iterm2.plist ~/.iterm2/com.googlecode.iterm2.plist
 ln -sfF ~/dotfiles/.code-settings.jsonc ~/Library/Application\ Support/Code/User/settings.json
 ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/User/keybindings.json
 
@@ -63,7 +61,8 @@ brew install cyberduck
 brew install geekbench
 brew install google-chrome
 brew install google-drive
-brew install iterm2
+brew install warp
+brew install starship
 brew install kap
 brew install messenger
 brew install native-access
@@ -93,7 +92,6 @@ brew install wget
 brew install yarn
 
 mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
 npm config set strict-ssl true -g
 npm install --global mintable
@@ -202,14 +200,8 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ###############################################################################
 
 echo "Setting User Preferences folder"
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool TRUE
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.iterm2"
-
 defaults write com.runningwithcrayons.Alfred-Preferences syncfolder ~/dotfiles
 defaults write com.runningwithcrayons.Alfred-Preferences-3 syncfolder ~/dotfiles
-
-echo "Don’t display the annoying prompt when quitting iTerm"
-defaults write com.googlecode.iterm2 PromptOnQuit -bool FALSE
 
 code --install-extension zhuangtongfa.material-theme
 code --install-extension eriklynd.json-tools
