@@ -245,6 +245,12 @@ then
   mas install 425424353
   # Amphetamine
   mas install 937984704
+  # Affinity Photo
+  mas install 824183456
+  # Infuse
+  mas install 1136220934
+  # Wifi Explorer
+  mas install 494803304
 fi
 
 echo "Done!"
