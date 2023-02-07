@@ -1,19 +1,18 @@
 # .zshrc
 
 source ~/.bash_profile
-source ~/.work-alias
+source ~/.workrc
 
 export PATH="/usr/local/sbin:$PATH"
 
-# Anaconda installation of Python 
+# Anaconda python distribution
 # export PATH="/usr/local/anaconda3/bin:$PATH"
 
-# Brew installation of Python
-export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
-alias python='/usr/local/opt/python@3.9/libexec/bin/python'
-alias pip='/usr/local/opt/python@3.9/libexec/bin/pip'
-
-export TOKEN=`security find-generic-password -a ${USER} -s PALOMA_TOKEN -w`
+# Native / Brew python distribution
+# export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
+# alias python='/usr/local/opt/python@3.9/libexec/bin/python'
+# alias pip='/usr/local/opt/python@3.9/libexec/bin/pip'
+# alias python='python3'
 
 # Defaults
 export HISTSIZE=10000
@@ -38,8 +37,8 @@ alias ls='ls -G'
 alias mkdir='mkdir -p'
 alias please='sudo $(fc -ln -1)'
 alias rm='rm -r'
-alias python='python3'
 alias pip='pip3'
+alias tree='tree -I "node_modules|cache|test_*|.git" -a'
 
 # Functions
 function gpa(){
