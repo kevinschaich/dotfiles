@@ -6,7 +6,7 @@
 
 cd ~
 echo "Setting up symlinks..."
-touch ~/.work-alias
+touch ~/.workrc
 touch ~/.bash_profile
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -sfF ~/dotfiles/.inputrc ~
