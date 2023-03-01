@@ -148,7 +148,7 @@ code --install-extension ms-python.python
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension richie5um2.vscode-sort-json
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension zhuangtongfa.material-theme
+code --install-extension GitHub.github-vscode-theme
 
 ###############################################################################
 # MAS-only Apps

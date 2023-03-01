@@ -62,7 +62,7 @@
         "tabler",
         "uncomment"
     ],
-    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Hack",
     "editor.fontSize": 14,
     "editor.formatOnPaste": true,
     "editor.gotoLocation.multiple": "goto",
@@ -147,12 +147,13 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.closeWhenEmpty": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}",
-    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.colorTheme": "GitHub Dark",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.plist": "default",
         "*.sqlite": "sqlite-viewer.view"
     },
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 1
 }
