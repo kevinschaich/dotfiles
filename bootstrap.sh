@@ -65,7 +65,6 @@ brew install proxyman
 brew install rocket
 brew install signal
 brew install slack
-brew install sonos
 brew install spotify
 brew install starship
 brew install steam
