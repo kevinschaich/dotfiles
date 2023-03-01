@@ -1,129 +1,24 @@
 {
-    // Visual/Style Tweaks
-    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 24,
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.rulers": [120],
-    "prettier.printWidth": 120,
-    "markdown.preview.scrollPreviewWithEditor": false,
-    "markdown.preview.scrollEditorWithPreview": false,
-    "explorer.confirmDragAndDrop": false,
-    "editor.gotoLocation.multiple": "goto",
-
-    // Operation more similar to Sublime
-    "editor.formatOnPaste": true,
-    "editor.snippetSuggestions": "top",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "window.title": "${activeEditorMedium}${separator}${rootName}",
-    "window.closeWhenEmpty": false,
-    "breadcrumbs.enabled": true,
-
-    // Code editing
-    "prettier.tabWidth": 4,
-    "search.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/bower_components": true,
-        "**/jspm_packages": true,
-        "**/node_modules": true,
-        "**/yarn.lock": true
-    },
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.DS_Store": true,
-        "**/.factorypath": true,
-        "**/.git": true,
-        "**/.hg": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.svn": true,
-        "**/bower_components": true,
-        "**/jspm_packages": true,
-        "**/next-env.d.ts": true,
-        "**/node_modules": true,
-        "**/package-lock.json": true,
-        "**/yarn.lock": true
-    },
-
-    // Linting customizations
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "cSpell.userWords": [
-        "animejs",
-        "dagster",
-        "dataset",
-        "dedupe",
-        "geospatial",
-        "getsizeof",
-        "kevinschaich",
-        "mapbox",
-        "Mjolnir",
-        "nextui",
-        "palantir",
-        "pickable",
-        "pyproj",
-        "pyspark",
-        "pywikibot",
-        "Scatterplot",
-        "schaich",
-        "sidechain",
-        "sjoin",
-        "spotipy",
-        "supabase",
-        "tabler",
-        "uncomment"
-    ],
-    "python.formatting.autopep8Args": [
-        "--max-line-length=120"
-    ],
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "markdown.extension.toc.levels": "2..3",
-
-    // Misc.
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "python.pythonPath": "/usr/local/bin/python3.9",
-    "explorer.confirmDelete": false,
-    "http.proxyStrictSSL": false,
-    "python.formatting.provider": "black",
-    "python.showStartPage": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook",
-        "*.plist": "default",
-        "*.sqlite": "sqlite-viewer.view"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.formatting.blackArgs": [
-        "-l 120"
-    ],
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "html.format.wrapLineLength": 180,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -131,14 +26,133 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "breadcrumbs.enabled": true,
+    "cSpell.userWords": [
+        "animejs",
+        "dagster",
+        "dask",
+        "dataframe",
+        "dataset",
+        "dedupe",
+        "dotenv",
+        "dtypes",
+        "explorative",
+        "flytekit",
+        "geospatial",
+        "getsizeof",
+        "jdbc",
+        "kevinschaich",
+        "mapbox",
+        "Mjolnir",
+        "ndjson",
+        "nextui",
+        "npartitions",
+        "palantir",
+        "pickable",
+        "pyproj",
+        "pyspark",
+        "pywikibot",
+        "Scatterplot",
+        "schaich",
+        "seatgeek",
+        "sidechain",
+        "sjoin",
+        "spotipy",
+        "supabase",
+        "tabler",
+        "uncomment"
+    ],
+    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.gotoLocation.multiple": "goto",
+    "editor.largeFileOptimizations": false,
+    "editor.lineHeight": 24,
+    "editor.multiCursorLimit": 100000,
+    "editor.rulers": [120],
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.showOperators": false,
+    "editor.suggest.showSnippets": false,
+    "editor.suggestSelection": "first",
+    "emmet.showAbbreviationSuggestions": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.ipynb_checkpoints": true,
+        "**/.svn": false,
+        "**/CVS": false,
+        "**/__pycache__": true,
+        ".git": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": false,
+        "**/.git/subtree-cache/**": false
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.ignoreSubmodules": true,
+    "html.format.wrapLineLength": 180,
+    "http.proxyStrictSSL": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "jupyter.kernels.filter": [
+        {
+            "path": "/opt/homebrew/anaconda3/bin/python",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/bin/python3",
+            "type": "pythonEnvironment"
+        }
+    ],
+    "markdown.extension.toc.levels": "2..3",
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "notebook.output.textLineLimit": 10000,
+    "prettier.arrowParens": "avoid",
+    "prettier.bracketSpacing": false,
+    "prettier.printWidth": 120,
     "prettier.semi": false,
     "prettier.singleQuote": true,
-    "prettier.arrowParens": "avoid",
-    "editor.largeFileOptimizations": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // Code editing
+    "prettier.tabWidth": 4,
+    "python.analysis.logLevel": "Error",
+    "python.defaultInterpreterPath": "/Users/kevinschaich/mambaforge/bin/python",
+    "python.formatting.autopep8Args": ["--max-line-length=120"],
+    "python.formatting.blackArgs": ["-l 120"],
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/usr/local/bin/python3.9",
+    "python.showStartPage": false,
+    "search.exclude": {
+        "**/*.code-search": false,
+        "**/bower_components": false,
+        "**/node_modules": false,
+        "**/node_modules/*/**": true,
+        "**yarn**": true
     },
-    "prettier.bracketSpacing": false,
-    "editor.multiCursorLimit": 100000
+    "search.useIgnoreFiles": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.inheritEnv": false,
+    "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.closeWhenEmpty": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.plist": "default",
+        "*.sqlite": "sqlite-viewer.view"
+    },
+    "workbench.startupEditor": "newUntitledFile"
 }

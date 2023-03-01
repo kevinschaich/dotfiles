@@ -3,16 +3,14 @@
 source ~/.bash_profile
 source ~/.workrc
 
-export PATH="/usr/local/sbin:$PATH"
-
-# Anaconda python distribution
-# export PATH="/usr/local/anaconda3/bin:$PATH"
-
-# Native / Brew python distribution
-# export PATH="/usr/local/opt/python@3.9/libexec/bin:$PATH"
-# alias python='/usr/local/opt/python@3.9/libexec/bin/python'
-# alias pip='/usr/local/opt/python@3.9/libexec/bin/pip'
-# alias python='python3'
+# Python – Brew 3.11 + Poetry
+# export PATH="/Users/kevinschaich/.local/bin:$PATH" # for Poetry
+alias python=/opt/homebrew/bin/python3.11
+alias python3=/opt/homebrew/bin/python3.11
+alias python3.11=/opt/homebrew/bin/python3.11
+alias pip=/opt/homebrew/bin/pip3.11
+alias pip3=/opt/homebrew/bin/pip3.11
+alias pip3.11=/opt/homebrew/bin/pip3.11
 
 # Defaults
 export HISTSIZE=10000
@@ -45,7 +43,7 @@ function gpa(){
     git add -A && git commit -m  "$*" && git push;
 }
 function kp(){
-    ps -ef | grep "$@" | awk '{print $2}' | xargs kill
+    pkill -f "$@"
 }
 function hide(){
     defaults write com.apple.finder AppleShowAllFiles -bool NO
@@ -56,9 +54,5 @@ function show(){
     killall Finder
 }
 
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|?=** r:|?=**'
-
-source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

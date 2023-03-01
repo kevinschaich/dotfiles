@@ -27,8 +27,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing zsh utilities..."
 brew install git zsh
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-syntax-highlighting
-# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh-autosuggestions
 chsh -s /bin/zsh
 
 git config --global credential.helper osxkeychain
@@ -53,6 +51,7 @@ brew install cyberduck
 brew install figma
 brew install geekbench
 brew install google-chrome
+brew install brave-browser
 brew install google-drive
 brew install kap
 brew install messenger
@@ -74,6 +73,8 @@ brew install transmission
 brew install visual-studio-code
 brew install warp
 brew install whatsapp
+brew install homebrew/cask/docker
+brew install stats
 
 echo "Installing terminal utilities..."
 
@@ -84,12 +85,9 @@ brew install tldr
 brew install unrar
 brew install wget
 
-# need to test
-# brew install anaconda
-# brew install node
-# brew install python
-# brew install python3
-# brew install yarn
+brew install node
+brew install yarn
+brew install python@3.11
 
 mkdir -p "$HOME/.zsh"
 
@@ -142,14 +140,15 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ###############################################################################
 
 echo "Installing VSCode Extensions"
-
-code --install-extension zhuangtongfa.material-theme
 code --install-extension eriklynd.json-tools
 code --install-extension esbenp.prettier-vscode
+code --install-extension mikestead.dotenv
+code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-vscode.sublime-keybindings
+code --install-extension richie5um2.vscode-sort-json
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension eamodio.gitlens
+code --install-extension zhuangtongfa.material-theme
 
 ###############################################################################
 # MAS-only Apps
