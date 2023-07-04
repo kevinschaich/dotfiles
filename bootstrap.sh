@@ -46,29 +46,27 @@ echo "Installing apps..."
 # brew install screens-connect
 # brew install sketch # need older version
 
-brew install bitbar
-brew install cyberduck
+# brew install bitbar
+# brew install cyberduck
+brew install arc
 brew install figma
 brew install geekbench
-brew install google-chrome
-brew install brave-browser
 brew install google-drive
 brew install kap
 brew install messenger
-brew install mongodb-community
-brew install mongodb-compass
-brew install mongodb-database-tools
-brew install native-access
+# brew install mongodb-community
+# brew install mongodb-compass
+# brew install mongodb-database-tools
 brew install notion
-brew install postman
-brew install proxyman
-brew install rocket
+# brew install postman
+# brew install proxyman
+# brew install rocket
 brew install signal
 brew install slack
 brew install spotify
 brew install starship
-brew install steam
-brew install transmission
+# brew install steam
+# brew install transmission
 brew install visual-studio-code
 brew install warp
 brew install whatsapp
@@ -158,7 +156,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   # Things 3
-  mas install 904280696
+  # mas install 904280696
   # Magnet
   mas install 441258766
   # Blackmagic Disk Speed Test
@@ -166,11 +164,9 @@ then
   # Ookla Speedtest
   mas install 1153157709
   # The Unarchiver
-  mas install 425424353
-  # Amphetamine
-  mas install 937984704
+  # mas install 425424353
   # Affinity Photo
-  mas install 824183456
+  # mas install 824183456
   # Infuse
   mas install 1136220934
   # Wifi Explorer
