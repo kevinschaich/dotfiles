@@ -5,6 +5,8 @@ source ~/.workrc
 
 # Python – Brew 3.11 + Poetry
 # export PATH="/Users/kevinschaich/.local/bin:$PATH" # for Poetry
+export PYTHONPATH=/opt/homebrew/bin/python3.11
+export PATH="/Users/kevinschaich/.local/bin:$PATH"
 alias python=/opt/homebrew/bin/python3.11
 alias python3=/opt/homebrew/bin/python3.11
 alias python3.11=/opt/homebrew/bin/python3.11
@@ -56,3 +58,10 @@ function show(){
 
 eval "$(starship init zsh)"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kevinschaich/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kevinschaich/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kevinschaich/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kevinschaich/google-cloud-sdk/completion.zsh.inc'; fi

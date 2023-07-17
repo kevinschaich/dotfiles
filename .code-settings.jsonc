@@ -97,16 +97,6 @@
     "html.format.wrapLineLength": 180,
     "http.proxyStrictSSL": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "jupyter.kernels.filter": [
-        {
-            "path": "/opt/homebrew/anaconda3/bin/python",
-            "type": "pythonEnvironment"
-        },
-        {
-            "path": "/usr/bin/python3",
-            "type": "pythonEnvironment"
-        }
-    ],
     "markdown.extension.toc.levels": "2..3",
     "markdown.preview.scrollEditorWithPreview": false,
     "markdown.preview.scrollPreviewWithEditor": false,
@@ -123,11 +113,12 @@
     // Code editing
     "prettier.tabWidth": 4,
     "python.analysis.logLevel": "Error",
-    "python.defaultInterpreterPath": "/Users/kevinschaich/mambaforge/bin/python",
-    "python.formatting.autopep8Args": ["--max-line-length=120"],
-    "python.formatting.blackArgs": ["-l 120"],
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120"
+    ],
     "python.formatting.provider": "black",
-    "python.pythonPath": "/usr/local/bin/python3.9",
+    "python.pythonPath": "/opt/homebrew/bin/python3.11",
     "python.showStartPage": false,
     "search.exclude": {
         "**/*.code-search": false,
@@ -155,5 +146,21 @@
         "*.sqlite": "sqlite-viewer.view"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1
+    "jupyter.kernels.excludePythonEnvironments": [
+        "/opt/homebrew/anaconda3/bin/python",
+        "/usr/bin/python3"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.inlineSuggest.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "audioCues.volume": 0
 }
