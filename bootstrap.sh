@@ -86,6 +86,7 @@ brew install wget
 brew install node
 brew install yarn
 brew install python@3.11
+brew install ngrok/ngrok/ngrok
 
 mkdir -p "$HOME/.zsh"
 
