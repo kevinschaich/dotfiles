@@ -23,6 +23,7 @@ ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/U
 echo "Installing Homebrew & Homebrew Cask..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap caskroom/versions
+brew tap homebrew/cask-fonts
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing zsh utilities..."
@@ -87,6 +88,8 @@ brew install yarn
 brew install python@3.11
 
 mkdir -p "$HOME/.zsh"
+
+brew install font-hack
 
 # npm config set strict-ssl true -g
 # npm install --global mintable

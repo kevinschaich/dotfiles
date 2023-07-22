@@ -40,6 +40,7 @@
         "flytekit",
         "geospatial",
         "getsizeof",
+        "Intelli",
         "jdbc",
         "kevinschaich",
         "mapbox",
@@ -112,7 +113,6 @@
     "prettier.singleQuote": true,
     // Code editing
     "prettier.tabWidth": 4,
-    "python.analysis.logLevel": "Error",
     "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
     "python.formatting.autopep8Args": [
         "--max-line-length=120"
@@ -160,7 +160,30 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "basic",
-    "audioCues.volume": 0
+    "audioCues.volume": 0,
+    "colorize.languages": [
+        "typescript",
+        "typescriptreact",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ],
+    "window.zoomLevel": -1,
+    "cSpell.ignoreWords": [
+        "chtd"
+    ],
+    "editor.accessibilitySupport": "off",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeLensFontFamily": "Hack",
+    "editor.inlayHints.fontFamily": "Hack",
+    "notebook.output.fontFamily": "Hack",
+    "terminal.integrated.fontFamily": "Hack"
 }
