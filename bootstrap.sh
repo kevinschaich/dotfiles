@@ -141,15 +141,26 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ###############################################################################
 
 echo "Installing VSCode Extensions"
+code --install-extension bungcip.better-toml
+code --install-extension dvirtz.parquet-viewer
+code --install-extension eamodio.gitlens
 code --install-extension eriklynd.json-tools
 code --install-extension esbenp.prettier-vscode
+code --install-extension GitHub.copilot
+code --install-extension GitHub.copilot-chat
+code --install-extension GitHub.github-vscode-theme
+code --install-extension JannisX11.batch-rename-extension
+code --install-extension kamikillerto.vscode-colorize
 code --install-extension mikestead.dotenv
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode.sublime-keybindings
+code --install-extension Prisma.prisma
 code --install-extension richie5um2.vscode-sort-json
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension GitHub.github-vscode-theme
+code --install-extension yoavbls.pretty-ts-errors
 
 ###############################################################################
 # MAS-only Apps

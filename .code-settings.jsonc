@@ -185,5 +185,7 @@
     "editor.codeLensFontFamily": "Hack",
     "editor.inlayHints.fontFamily": "Hack",
     "notebook.output.fontFamily": "Hack",
-    "terminal.integrated.fontFamily": "Hack"
+    "terminal.integrated.fontFamily": "Hack",
+    "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+    "gitlens.blame.ignoreWhitespace": true
 }
