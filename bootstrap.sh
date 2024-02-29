@@ -23,6 +23,7 @@ ln -sfF ~/dotfiles/.code-keybindings.jsonc ~/Library/Application\ Support/Code/U
 echo "Installing Homebrew & Homebrew Cask..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap caskroom/versions
+brew tap homebrew/cask-fonts
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing zsh utilities..."
@@ -85,8 +86,11 @@ brew install wget
 brew install node
 brew install yarn
 brew install python@3.11
+brew install ngrok/ngrok/ngrok
 
 mkdir -p "$HOME/.zsh"
+
+brew install font-hack
 
 # npm config set strict-ssl true -g
 # npm install --global mintable
@@ -137,15 +141,26 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ###############################################################################
 
 echo "Installing VSCode Extensions"
+code --install-extension bungcip.better-toml
+code --install-extension dvirtz.parquet-viewer
+code --install-extension eamodio.gitlens
 code --install-extension eriklynd.json-tools
 code --install-extension esbenp.prettier-vscode
+code --install-extension GitHub.copilot
+code --install-extension GitHub.copilot-chat
+code --install-extension GitHub.github-vscode-theme
+code --install-extension JannisX11.batch-rename-extension
+code --install-extension kamikillerto.vscode-colorize
 code --install-extension mikestead.dotenv
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode.sublime-keybindings
+code --install-extension Prisma.prisma
 code --install-extension richie5um2.vscode-sort-json
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension GitHub.github-vscode-theme
+code --install-extension yoavbls.pretty-ts-errors
 
 ###############################################################################
 # MAS-only Apps

@@ -40,6 +40,7 @@
         "flytekit",
         "geospatial",
         "getsizeof",
+        "Intelli",
         "jdbc",
         "kevinschaich",
         "mapbox",
@@ -99,16 +100,6 @@
     "html.format.wrapLineLength": 180,
     "http.proxyStrictSSL": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "jupyter.kernels.filter": [
-        {
-            "path": "/opt/homebrew/anaconda3/bin/python",
-            "type": "pythonEnvironment"
-        },
-        {
-            "path": "/usr/bin/python3",
-            "type": "pythonEnvironment"
-        }
-    ],
     "markdown.extension.toc.levels": "2..3",
     "markdown.preview.scrollEditorWithPreview": false,
     "markdown.preview.scrollPreviewWithEditor": false,
@@ -124,12 +115,12 @@
     "prettier.singleQuote": true,
     // Code editing
     "prettier.tabWidth": 4,
-    "python.analysis.logLevel": "Error",
-    "python.defaultInterpreterPath": "/Users/kevinschaich/mambaforge/bin/python",
-    "python.formatting.autopep8Args": ["--max-line-length=120"],
-    "python.formatting.blackArgs": ["-l 120"],
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120"
+    ],
     "python.formatting.provider": "black",
-    "python.pythonPath": "/usr/local/bin/python3.9",
+    "python.pythonPath": "/opt/homebrew/bin/python3.11",
     "python.showStartPage": false,
     "search.exclude": {
         "**/*.code-search": false,
@@ -169,5 +160,42 @@
     "audioCues.taskCompleted": "off",
     "audioCues.onDebugBreak": "off",
     "audioCues.volume": 0,
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "jupyter.kernels.excludePythonEnvironments": [
+        "/opt/homebrew/anaconda3/bin/python",
+        "/usr/bin/python3"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.inlineSuggest.enabled": true,
+    "colorize.languages": [
+        "typescript",
+        "typescriptreact",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ],
+    "cSpell.ignoreWords": [
+        "chtd"
+    ],
+    "editor.accessibilitySupport": "off",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeLensFontFamily": "Hack",
+    "editor.inlayHints.fontFamily": "Hack",
+    "notebook.output.fontFamily": "Hack",
+    "terminal.integrated.fontFamily": "Hack",
+    "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+    "gitlens.blame.ignoreWhitespace": true
 }

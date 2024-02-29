@@ -5,6 +5,8 @@ source ~/.workrc
 
 # Python – Brew 3.11 + Poetry
 # export PATH="/Users/kevinschaich/.local/bin:$PATH" # for Poetry
+export PYTHONPATH=/opt/homebrew/bin/python3.11
+export PATH="/Users/kevinschaich/.local/bin:$PATH"
 alias python=/opt/homebrew/bin/python3.11
 alias python3=/opt/homebrew/bin/python3.11
 alias python3.11=/opt/homebrew/bin/python3.11
@@ -56,10 +58,3 @@ function show(){
 
 eval "$(starship init zsh)"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-
-# bun completions
-[ -s "/Users/kevinschaich/.bun/_bun" ] && source "/Users/kevinschaich/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
