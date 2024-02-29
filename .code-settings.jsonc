@@ -78,13 +78,15 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.exclude": {
+        ".git": true,
+        ".next": true,
+        "**/__pycache__": true,
         "**/.git": false,
         "**/.hg": false,
         "**/.ipynb_checkpoints": true,
         "**/.svn": false,
         "**/CVS": false,
-        "**/__pycache__": true,
-        ".git": true
+        "node_modules": true
     },
     "files.watcherExclude": {
         "**/.git/objects/**": false,
@@ -155,5 +157,17 @@
         "*.sqlite": "sqlite-viewer.view"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "audioCues.chatResponsePending": "off",
+    "audioCues.diffLineDeleted": "off",
+    "audioCues.diffLineInserted": "off",
+    "audioCues.terminalQuickFix": "off",
+    "audioCues.terminalCommandFailed": "off",
+    "audioCues.taskFailed": "off",
+    "audioCues.taskCompleted": "off",
+    "audioCues.onDebugBreak": "off",
+    "audioCues.volume": 0,
+    "window.zoomLevel": -1
 }
