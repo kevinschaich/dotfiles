@@ -86,7 +86,6 @@ brew install wget
 brew install node
 brew install yarn
 brew install python@3.11
-brew install ngrok/ngrok/ngrok
 
 mkdir -p "$HOME/.zsh"
 
@@ -141,26 +140,40 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 ###############################################################################
 
 echo "Installing VSCode Extensions"
-code --install-extension bungcip.better-toml
-code --install-extension dvirtz.parquet-viewer
-code --install-extension eamodio.gitlens
-code --install-extension eriklynd.json-tools
+# code --install-extension anseki.vscode-color
+# code --install-extension awxxxxxx.vscode-mdx-checker
+# code --install-extension bradlc.vscode-tailwindcss
+# code --install-extension bungcip.better-toml
+# code --install-extension christian-kohler.npm-intellisense
+# code --install-extension christian-kohler.path-intellisense
+# code --install-extension dang.package-json-helper
+# code --install-extension eamodio.gitlens
+# code --install-extension eriklynd.json-tools
 code --install-extension esbenp.prettier-vscode
-code --install-extension GitHub.copilot
-code --install-extension GitHub.copilot-chat
-code --install-extension GitHub.github-vscode-theme
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension github.github-vscode-theme
+code --install-extension github.vscode-github-actions
 code --install-extension JannisX11.batch-rename-extension
+# code --install-extension jvitor83.typings-autoinstaller
 code --install-extension kamikillerto.vscode-colorize
 code --install-extension mikestead.dotenv
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.debugpy
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+# code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.sublime-keybindings
-code --install-extension Prisma.prisma
+code --install-extension prisma.prisma
 code --install-extension richie5um2.vscode-sort-json
+code --install-extension sketchbuch.vsc-packages
 code --install-extension streetsidesoftware.code-spell-checker
+# code --install-extension unifiedjs.vscode-mdx
+# code --install-extension wix.vscode-import-cost
 code --install-extension yoavbls.pretty-ts-errors
+# code --install-extension zyrong.node-modules
+
 
 ###############################################################################
 # MAS-only Apps
@@ -181,7 +194,7 @@ then
   # The Unarchiver
   # mas install 425424353
   # Affinity Photo
-  # mas install 824183456
+  mas install 824183456
   # Infuse
   mas install 1136220934
   # Wifi Explorer
